@@ -141,8 +141,17 @@
     #cloud-compliance {
         padding: 3% 28%;
 
+        @media #{$mobile} {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
         p {
             text-align: left;
+        }
+
+        .row {
+            padding-top: 0;
         }
 
         h3 {

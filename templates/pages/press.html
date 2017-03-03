@@ -21,6 +21,8 @@
             </h3>
             <h3>
                 We're happy to speak with anyone writing about security or cloud data encryption
+            </h3>
+            <h3>
                 Please email us at <a href="mailto:press@tanker.io">press@tanker.io</a>
             </h3>
             <div class="button-container">
@@ -33,7 +35,7 @@
     </div>
 
     <div id="press-releases">
-        <h1>Press releases</h1>
+        <h3>Press releases</h3>
         <div class="container">
             {% for element in PressRelease_all %}
                 {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:"3" %}
@@ -55,8 +57,7 @@
     </div>
 
     <div id="press-publications">
-        <h1>Publications</h1>
-        <div class="container">
+        <h3>Publications</h3>
             {% for element in Publication_all %}
                 {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:"3" %}
                     <div class="row">
@@ -73,27 +74,35 @@
                 {% endif %}
                 {% endfor %}
             </div>
-        </div>
 
     </div>
 
     <div id="press-brand-assets">
-        <h1>Brand assets</h1>
+        <h3>Brand assets</h3>
         <h4>Feel free to use our wordmark and logos</h4>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <img src="{% static "img/press/tanker-white.png" %}" alt="Tanker"/>
+                    <a href="{% static "img/press/tanker-white.png" %}" class="download">
+                        <img src="{% static "img/press/download.png" %}" alt="Tanker"/>
+                    </a>
                 </div>
                 <div class="col-md-3">
                     <img src="{% static "img/press/tanker-blue.png" %}" alt="Tanker"/>
+                    <a href="{% static "img/press/tanker-blue.png" %}" class="download">
+                        <img src="{% static "img/press/download.png" %}" alt="Tanker"/>
+                    </a>
                 </div>
                 <div class="col-md-6">
                     <img src="{% static "img/press/tanker-baseline.png" %}" alt="Tanker"/>
+                    <a href="{% static "img/press/tanker-baseline.png" %}" class="download">
+                        <img src="{% static "img/press/download.png" %}" alt="Tanker"/>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="button-container">
@@ -103,7 +112,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 {% endblock %}
@@ -117,4 +126,3 @@
         });
     </script>
 {% endblock %}
-

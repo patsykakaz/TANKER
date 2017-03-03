@@ -5,8 +5,16 @@
     width: 100%;
     padding: 110px 10%;
 
-    h1, p {
+    h1, p, a {
         color: $white;
+    }
+
+    a {
+        &:hover {
+            &:after {
+                border-color: $white;
+            }
+        }
     }
 
     li {

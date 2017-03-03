@@ -6,13 +6,47 @@
 {% trans "Page not found" %}
 {% endblock %}
 
+{% block extra_css %}
+<style type="text/css">
+    body{
+        background-color: #263B77;
+    }
+    i{
+        color: #F6A623;
+    }
+    #content{
+        margin-top: 230px;
+        margin-bottom: 180px;
+    }
+    .panel{
+        border-color: #F6A623;
+        /*border-color: rgba(0,0,0,.3);*/
+        border-radius: 0;
+    }
+    .panel-danger > .panel-heading{
+        background-image: none;
+        background-color: #F6A623;
+    }
+    .panel-body{
+        /*background-color: #263B77;*/
+    }
+</style>
+{% endblock %}
+
 {% block title %}
 {% trans "Page not found" %}
 {% endblock %}
 
 {% block main %}
-<div class="panel panel-danger">
-	<div class="panel-heading"><h3 class="panel-title">{% trans "Page not found" %}</h3></div>
-	<div class="panel-body">{% trans "The page you requested does not exist." %}</div>
+<div class='container'>
+    <div class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1'>
+        <div id='content'>
+            <div class="panel panel-danger">
+                <div class="panel-heading"><h3 class="panel-title">{% trans "Page not found" %}</h3></div>
+                <div class="panel-body"><i class='fa fa-warning'></i> {% trans "The page you requested does not exist." %}</div>
+            </div>        
+        </div>
+    </div>
 </div>
 {% endblock %}
+

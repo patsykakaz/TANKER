@@ -39,6 +39,11 @@ ga('send', 'pageview');
             }
 
         });
+
+        $('#newsletter-form').submit(function(e) {
+          e.preventDefault();
+          $('.request-demo').magnificPopup('open');
+        });
     });
 </script>
 

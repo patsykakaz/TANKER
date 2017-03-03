@@ -6,13 +6,50 @@
 {% trans "Error" %}
 {% endblock %}
 
+{% block extra_css %}
+<style type="text/css">
+    body{
+        background-color: #263B77;
+    }
+    i{
+        color: rgb(234,97,114);
+    }
+    #content{
+        margin-top: 230px;
+        margin-bottom: 180px;
+    }
+    .panel{
+        border-color: rgb(234,97,114);
+        /*border-color: rgba(0,0,0,.3);*/
+        border-radius: 0;
+    }
+    .panel-danger > .panel-heading{
+        background-image: none;
+        background-color: rgb(234,97,114);
+    }
+    .panel-body{
+        /*background-color: #263B77;*/
+    }
+</style>
+{% endblock %}
+
 {% block title %}
 {% trans "Error" %}
 {% endblock %}
 
 {% block main %}
-<div class="panel panel-danger">
-	<div class="panel-heading"><h3 class="panel-title">{% trans "Error" %}</h3></div>
-	<div class="panel-body">{% trans "Sorry, an error occurred." %}</div>
+<div class='container'>
+    <div class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1'>
+        <div id='content'>
+            <div class="panel panel-danger">
+                <div class="panel-heading"><h3 class="panel-title">{% trans "Error" %}</h3></div>
+                <div class="panel-body"><i class='fa fa-thumbs-down'></i> {% trans "Sorry, an error occurred." %}</div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
+
+{% block main %}
+
+

@@ -11,7 +11,7 @@
         }
 
         .header-content {
-            padding: 9% 0 5% 0;
+            padding: 8% 0 8% 0;
             position: relative;
             top: 40%;
             left: 50%;
@@ -37,6 +37,7 @@
                 color: $white;
                 font-weight: 600;
                 padding-bottom: 0;
+                padding-top: 0;
                 text-align: center;
                 padding-left: 0;
                 margin: 0;
@@ -70,6 +71,8 @@
             }
 
             .button-container {
+                padding-bottom: 0;
+
                 .button {
                     @include prefix(box-shadow, none);
 
@@ -93,10 +96,25 @@
     }
 
     #press-releases, #press-publications {
-        padding-bottom: 5%;
+        padding: 5% 0;
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+            padding-bottom: 2%;
+        }
 
         .col-md-4 {
-            padding: 0 5% 5% 5%;
+            padding: 0 5% 0 5%;
+
+            p, h3 {
+                text-align: left;
+            }
+
+            h3 {
+                font-size: 14px;
+                line-height: 25px;
+            }
 
             img {
                 @media #{$tablet} {
@@ -118,11 +136,60 @@
 
     #press-publications {
         background: $lightGrey2;
+
+        .col-md-4 {
+            h3 {
+                padding-top: 20px;
+            }
+        }
     }
 
     #press-brand-assets {
+        padding: 3% 0;
+        padding-bottom: 7%;
+
+        .container {
+            overflow: visible;
+        }
+
+        .download {
+            width: 20px;
+            position: absolute;
+            bottom: -20px;
+            z-index: 2;
+            right: 25%;
+
+            &:after {
+                content: none;
+            }
+
+            @media #{$tablet} {
+                right: 49%;
+                bottom: 12px;
+            }
+        }
+        .col-md-6 {
+            .download {
+                right: 4%;
+
+                @media #{$tablet} {
+                    right: 49%;
+                    bottom: 12px;
+                }
+            }
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
         .col-md-3, .col-md-6 {
             text-align: center;
+
+            @media #{$tablet} {
+                padding-bottom: 3%;
+            }
         }
 
         h1 {
@@ -132,7 +199,7 @@
         h4 {
             font-weight: 300;
             color: $black;
-            padding-bottom: 5%;
+            padding-bottom: 3%;
             text-align: center;
         }
 

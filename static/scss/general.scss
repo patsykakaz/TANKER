@@ -40,6 +40,10 @@ body {
                 bottom: 0;
             }
         }
+        
+        &:focus {
+            outline: none;
+        }
 
         &.button {
             color: $white;
@@ -110,6 +114,12 @@ body {
                 font-weight: normal;
                 font-size: 13px;
             }
+        }
+    }
+
+    input {
+        &:focus {
+            outline: none;
         }
     }
 
@@ -289,7 +299,7 @@ body {
     }
 
     .circle {
-        $size: 80px;
+        $size: 70px;
 
         height: $size;
         width: $size;

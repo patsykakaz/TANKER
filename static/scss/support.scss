@@ -101,6 +101,8 @@
     }
 
     #faq-content {
+        padding-left: 3%;
+
         @media #{$mobile} {
             padding-left: 40px;
         }
@@ -112,6 +114,8 @@
         .title {
             font-size: 30px;
             color: $black;
+            left: -32px;
+            position: relative;
 
             img {
                 width: 35px;
@@ -153,6 +157,12 @@
             text-align: left;
             padding-left: 0;
             color: $darkGrey;
+            padding-top: 0;
+            margin-top: 10px;
+        }
+
+        p {
+            text-align: left;
         }
 
         .col-md-3, .col-md-6 {
@@ -173,6 +183,7 @@
             img {
                 width: 30px;
                 display: inline-block;
+                padding-right: 4px;
             }
 
             h4 {

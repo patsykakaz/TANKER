@@ -7,16 +7,18 @@
         background-attachment: fixed;
 
         @media #{$mobile} {
-            min-height: 400px;
+            min-height: 450px;
         }
 
         .header-content {
-            padding: 9% 0 5% 0;
+            padding: 13% 0 8% 0;
             position: relative;
-            top: 40%;
+            top: 30%;
             left: 50%;
             @include prefix(transform, translate(-50%, 0));
+            color: $white;
             text-align: center;
+            width: 65%;
 
             @media #{$tablet} {
                 padding-top: 14%;
@@ -24,28 +26,18 @@
 
             @media #{$mobile} {
                 top: 70px;
-                left: 0;
-                position: relative;
-                width: 100%;
-                @include prefix(transform, none);
-                padding-left: 10%;
-                padding-right: 10%;
             }
 
             h1 {
+                margin: 0;
                 font-size: 33px;
-                color: $white;
-                font-weight: 600;
-                padding-bottom: 0;
-                text-align: center;
-                padding-left: 0;
-                margin: 0;
-                font-weight: 300;
-                text-transform: uppercase;
-                padding-right: 0;
-                margin: 0;
                 line-height: 55px;
                 padding-top: 2%;
+                padding-bottom: 2%;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-bottom: 0;
+                color: $white;
             }
 
             h3 {
@@ -83,8 +75,8 @@
     }
 
     .container {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
 
         .row {
             margin: 0;
@@ -99,12 +91,9 @@
                     width: 75%;
                 }
 
-                h2 {
-                    text-align: left;
-                }
-
-                h1 {
+                h1, h2 {
                     text-align: center;
+                    margin-top: 10px;
                 }
             }
 
@@ -150,9 +139,13 @@
         background-color: $blue;
         color: $white;
 
-        h1, p {
+        h2, p {
             color: $white;
         }
+    }
+
+    #about-us-3 {
+        background-color: $lightGrey3;
     }
 
     #committee {
@@ -166,8 +159,10 @@
         }
 
         .card {
+            $vertical: 50px;
+
             background-color: $blue;
-            padding: 40px 5px;
+            padding: $vertical 5px;
             text-align: center;
             position: relative;
             background-repeat: no-repeat;
@@ -175,12 +170,19 @@
             background-size: cover;
             margin-bottom: 5%;
             max-width: 200px;
+            min-height: 200px;
+
+            .link-container {
+                position: absolute;
+                bottom: $vertical;
+                width: 100%;
+            }
 
             h1 {
                 color: $white;
                 font-weight: 600;
                 z-index: 2;
-                font-size: 33px;
+                font-size: 20px;
             }
 
             a {
@@ -225,6 +227,10 @@
             &#philippe-baumard {
                 background-image: url(../../static/img/about-us/Philippe-Baumard.png);
             }
+
+            &#nadim-kobeissi {
+                background-image: url(../../static/img/about-us/Nadim-Kobeissi.jpg);
+            }
         }
     }
 
@@ -237,6 +243,18 @@
         z-index: 2;
         display: none;
         padding: 70px 7%;
+
+        .content {
+            top: 50%;
+            position: relative;
+            @include prefix(transform, translateY(-50%));
+
+            h1 {
+                margin-top: 0;
+                padding-top: 0;
+                font-size: 33px;
+            }
+        }
 
         .close {
             background: transparent;
