@@ -7,6 +7,24 @@
 {% block extra_head %}
     {{ block.super }}
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<style type="text/css">
+    @media screen and (min-width: 991px){
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 990px){
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: inline-block;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block main %}
@@ -126,32 +144,59 @@
             Frequently asked...
         </h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="question">
-                        Can encryption impact the machine performance?
-                    </p>
-                    <p class="answer">
-                        By design, we craft our encryption algorithms to make sure they won’t imact the user experience. For instance: encrypting 1 GB will take up to 4 minutes and impact storage to +1-4%.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="question one-line">
-                        How much is Tanker?
-                    </p>
-                    <p class="answer">
-                        Just contact us to get a demo and personal quote for Tanker.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="question">
-                        What do I have to change in my environment to implement Tanker?
-                    </p>
-                    <p class="answer">
-                        Almost nothing. If you have a firwall, just authorise Tanker subdomains.
-                    </p>
-                </div>
-            </div>
+<div class='row'>
+<div class="col-md-12">
+    <div class='row text-left'>
+        <div class='col-md-4'>
+            <p class="question">
+                Can encryption impact the machine performance?
+            </p>
+        </div>
+        <div class='col-md-4 mobile'>
+            <p class="answer text-justify">
+                By design, we craft our encryption algorithms to make sure they won’t imact the user experience. For instance: encrypting 1 GB will take up to 4 minutes and impact storage to +1-4%.
+            </p>
+        </div>
+        <div class='col-md-4'>
+            <p class="question one-line">
+                How much is Tanker?
+            </p>
+        </div>
+        <div class="col-md-4 mobile">
+            <p class="answer text-justify">
+                Just contact us to get a demo and personal quote for Tanker.
+            </p>
+        </div>
+        <div class='col-md-4'>
+            <p class="question">
+                What do I have to change in my environment to implement Tanker?
+            </p>
+        </div>
+        <div class="col-md-4 mobile">
+            <p class="answer text-justify">
+                Almost nothing. If you have a firwall, just authorise Tanker subdomains.
+            </p>
+        </div>
+    </div>
+    <div class='row desktop'>
+        <div class='col-md-4'>
+            <p class="answer text-justify">
+                By design, we craft our encryption algorithms to make sure they won’t imact the user experience. For instance: encrypting 1 GB will take up to 4 minutes and impact storage to +1-4%.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="answer text-justify">
+                Just contact us to get a demo and personal quote for Tanker.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="answer text-justify">
+                Almost nothing. If you have a firwall, just authorise Tanker subdomains.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
         </div>
 
         <div class="container" id="more-questions">

@@ -192,6 +192,22 @@
 {% block footer_js %}
     {{ block.super }}
     <script type="text/javascript">
+    $(document).ready(function(){
+        left = $('#user-first #what .col-md-6.left');
+        right = $('#user-first #what .col-md-6.right');
+        if($(window).width()>990){
+            right.css('padding-top',(left.outerHeight()-right.height())/2);
+        }else{
+            right.css('padding-top',0);
+        }
+    }); 
+    $(window).resize(function(){
+        if($(window).width()>990){
+            right.css('padding-top',(left.outerHeight()-right.height())/2);
+        }else{
+            right.css('padding-top',0);
+        }
+    }); 
         $('#learn-more').click(function(e) {
             e.preventDefault();
             $(window).scrollTo('#what', 800);

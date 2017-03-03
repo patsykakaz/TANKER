@@ -45,10 +45,10 @@
                         <p>{{ element.date }}</p>
                         <h3>{{ element.title }} </h3>
                         <a href='{{ element.lien_PDF.url }}' target='blank'>
-                            Read more <i class='fa fa-download'></i>
+                            Read more ></i>
                         </a>
                     </div>
-                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" %}
+                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" or forloop.last %}
                     </div>
                 {% endif %}
             {% endfor %}
@@ -58,18 +58,20 @@
 
     <div id="press-publications">
         <h3>Publications</h3>
+        <div class="container">
             {% for element in Publication_all %}
-                {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:"3" %}
+                {% if forloop.first or forloop.counter0|divisibleby:"3" %}
                     <div class="row">
                 {% endif %}
                     <div class="col-md-4">
                         <div class='publication'>
                             <img src="{{ MEDIA_URL }}{% thumbnail element.illustration 400 300 %}" alt="techcrunch"/>
                             <h3>{{ element.title }}</h3>
-                            <a href="{{ element.lien }}" target='blank'>Read more <i class='fa fa-external-link'></i></a>
+                            <a href="{{ element.lien }}" target='blank'>Read more ></i></a>
                         </div>
                     </div>
-                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" %}
+                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" or forloop.last %}
+<script>console.log('closing');</script>
                     </div>
                 {% endif %}
                 {% endfor %}

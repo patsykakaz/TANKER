@@ -7,6 +7,32 @@
 {% block extra_head %}
     {{ block.super }}
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <style type="text/css">
+	#jobs .container .row h1, #how-we-work h1, #hack-challenge h1, #job-offers h1, #contact-us h1{
+	    font-size: 25px;
+	    font-weight: 500;
+	}
+	#jobs #how-we-work .col-md-3 img{
+	    height: 100px;
+	}
+	#jobs #jobs-header .header-content{
+	    padding: 13% 0 8% 0;
+        }
+	.job-answer strong, .job-answer b{
+	    color: #263B77;
+        }
+	@media screen and (max-width: 990px){
+	    #jobs #jobs-header .header-content{
+		padding-top: 14%;
+	    }
+	}
+	@media screen and (max-width: 768px){
+           #jobs #jobs-header{
+                min-height: 580px;
+            }
+        }
+
+    </style>
 {% endblock %}
 
 {% block main %}
@@ -199,6 +225,10 @@
 {% block footer_js %}
     {{ block.super }}
     <script type="text/javascript">
+	$(document).ready(function(){
+	     $('.job-answer').css('display','none');	
+	     $('.job-button').addClass("read").html("read");	
+	});
         $('#learn-more').click(function(e) {
             e.preventDefault();
             $(window).scrollTo('#team', 800);
