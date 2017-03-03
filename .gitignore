@@ -12,7 +12,13 @@ share
 migrations
 static.tar
 local_settings.py
+/static/*
+!/static/css
+!/static/js
+!/static/img
+!/static/fonts
+!/static/scss/
+/static/scss/.sass-cache
 static/scss/*.css
 static/scss/*.css.map
-static/components/
 
