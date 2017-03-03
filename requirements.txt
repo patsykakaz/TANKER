@@ -1,0 +1,5 @@
+Mezzanine==4.2.2
+libsass
+django-compressor
+django-sass-processor
+django-bower

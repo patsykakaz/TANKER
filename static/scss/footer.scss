@@ -1,0 +1,126 @@
+#footer {
+    background-image: url(../../static/img/background-footer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 7%;
+    position: relative;
+    overflow: visible;
+
+    @media #{$mobile} {
+        padding-top: 10%;
+    }
+
+    .brand {
+        padding-bottom: 25px;
+        display: block;
+
+        &:after {
+            content: none;
+        }
+
+        img {
+            width: 40%;
+            max-width: 200px;
+        }
+    }
+
+    .phone {
+        color: $white;
+        margin-top: 10%;
+
+        span {
+            color: $white;
+        }
+
+        @media #{$tablet} {
+            margin-top: 0;
+        }
+
+        img {
+            width: 20px;
+            position: relative;
+            top: -2px;
+            opacity: 1;
+        }
+
+        span {
+            opacity: 0.4;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            padding-top: 5px;
+
+            &.title {
+                font-weight: 600;
+                color: $white;
+                padding-bottom: 15px;
+                font-size: 15px;
+            }
+
+            a {
+                color: $white;
+                font-weight: 100;
+
+                &:hover {
+                    &:after {
+                        border-color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding-top: 0%;
+        padding-bottom: 2%;
+        color: $white;
+        opacity: 0.4;
+        text-align: right;
+    }
+
+    #newsletter {
+        @media #{$mobile} {
+            display: none;
+        }
+
+        #newsletter-form {
+            $padding: 10px 30px;
+
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            @include prefix(transform, translateX(-50%));
+
+            input[type="email"] {
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border: none;
+                background: $white;
+                padding: $padding;
+                color: $black;
+                border: 2px solid $green;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input[type="submit"] {
+                border: none;
+                background: $green;
+                padding: 12px 30px;;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                left: -5px;
+                position: relative;
+                color: $white;
+            }
+        }
+    }
+}

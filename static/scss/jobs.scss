@@ -1,0 +1,230 @@
+#jobs {
+    #jobs-header {
+        background-image: url(../../static/img/jobs/header.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @media #{$mobile} {
+            min-height: 400px;
+        }
+
+        .header-content {
+            padding: 9% 0 5% 0;
+            position: relative;
+            top: 30%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, 0));
+            color: $white;
+            text-align: center;
+            width: 65%;
+
+            @media #{$mobile} {
+                top: 70px;
+                left: 0;
+                position: relative;
+                width: 100%;
+                @include prefix(transform, none);
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            h1 {
+                font-size: 33px;
+                margin: 0;
+                line-height: 55px;
+                padding-top: 2%;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-bottom: 0;
+                color: $white;
+            }
+
+            h3 {
+                font-size: 18px;
+                color: $white;
+            }
+
+            .button-container {
+                .button {
+                    @include prefix(box-shadow, none);
+
+                    img {
+                        max-width: 14px;
+                        margin-left: 8px;
+                        margin-bottom: 2px;
+                        position: relative;
+                        top: 0px;
+                        @include prefix(transition, all 0.2s ease);
+                    }
+
+                    &:hover {
+                        img {
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        .row {
+            margin: 0;
+            padding-top: 3%;
+
+            h1 {
+                color: $blue;
+                text-align: left;
+                padding-left: 0;
+                padding-bottom: 5%;
+                padding-top: 2%;
+            }
+
+            h2 {
+                text-transform: none;
+                font-weight: 600;
+            }
+
+            h3 {
+                color: $yellow;
+                text-align: left;
+                padding-bottom: 5%;
+                padding-top: 2%;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            .col-md-6, .col-md-7, .col-md-5 {
+                $padding: 4%;
+
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
+                text-align: center;
+                padding-left: $padding;
+                padding-right: $padding;
+
+                &.top {
+                    vertical-align: top;
+                }
+
+                img {
+                    width: 75%;
+                }
+
+                h2, p {
+                    text-align: left;
+                }
+            }
+
+            .col-md-12 {
+                text-align: center;
+            }
+        }
+    }
+
+    #team {
+        padding-bottom: 5%;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    #how-we-work {
+        padding-bottom: 7%;
+
+        .row {
+            padding-top: 0;
+        }
+
+        .col-md-3 {
+            $padding: 7%;
+
+            padding-right: $padding;
+            text-align: center;
+            padding-top: 30px;
+            vertical-align: bottom;
+
+            p {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            h3 {
+                color: $blue;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            img {
+                width: 25%;
+
+                @media #{$tablet} {
+                    max-width: 200px;
+                }
+
+                @media #{$mobile} {
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+
+    #hack-challenge {
+        background-image: url(../../static/img/jobs/hack.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-bottom: 5%;
+
+        h1, p {
+            text-align: left;
+            color: $white;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .col-md-6 {
+            vertical-align: top;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .button {
+            border: 1px solid $white;
+            background: transparent;
+            color: $white;
+            @include prefix(box-shadow, none);
+
+            &:hover {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+    }
+
+    #job-offers {
+        background-color: $white;
+    }
+
+    #contact-us {
+        text-align: center;
+
+        h1, p {
+            color: $black;
+            text-align: center;
+        }
+    }
+
+}

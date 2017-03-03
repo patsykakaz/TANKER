@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="jobs">
+    <div id="jobs-header">
+        <div class="header-content">
+            <h1>
+                Jobs
+            </h1>
+            <h3>
+                Help us build the safest and easiest-to-use 
+                security layer for cloud services.
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="background-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 top">
+                    <h1>
+                        Our team
+                    </h1>
+                    <p>
+                        We are a smart, ambitious, fun and hard-working group of technology-minded people who share the desire to change the rules of cyber security through innovation. <br/>
+                        Together we work to find simple solutions to complex problems, in a cooperative and ego-free environment.
+                    </p>
+                    <p>
+                        We are always looking for passionate people who enjoy a challenge and share our ethics when it comes to cyber security.
+                    </p>
+                    <p>
+                        If you feel that you can fit in and make an impact, come and meet us. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="how-we-work">
+        <h1>
+            How we work
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.45"
+                    data-to="0.1"
+                    data-opacity="0"
+                    src="{% static "img/jobs/schema1.svg" %}" class="cover" alt="Ownership"/>
+                    <h3>
+                        Ownership
+                    </h3>
+                    <p>
+                        Be in charge, make choices
+                    </p>
+                </div><!--
+                --><div class="col-md-3">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.5"
+                    data-to="0.2"
+                    data-opacity="0"
+                    src="{% static "img/jobs/schema2.svg" %}" class="cover" alt="User centric"/>
+                    <h3>
+                        Innovation
+                    </h3>
+                    <p>
+                        Challenge and optimise
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.55"
+                    data-to="0.25"
+                    data-opacity="0"
+                    src="{% static "img/jobs/schema3.svg" %}" class="cover" alt="Innovation"/>
+                    <h3>
+                        Transparency
+                    </h3>
+                    <p>
+                        Foundation for great collaboration
+                    </p>
+                </div><!--
+                --><div class="col-md-3">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.6"
+                    data-to="0.3"
+                    data-opacity="0"
+                    src="{% static "img/jobs/schema4.svg" %}" class="cover" alt="Transparency"/>
+                    <h3>
+                        User centric
+                    </h3>
+                    <p>
+                        Excellence in design and usability
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hack-challenge">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1>
+                        Hack challenge
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{% static "img/jobs/hack-code.png" %}" alt="Hack challenge"/>
+                        </div><!--
+                        --><div class="col-md-6">
+                            <a class="button" href="https://app.tanker.io/rabbit/">Take the challenge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="job-offers">
+        <h1>
+            Current openings
+        </h1>
+        <div class="job-items">
+            {% for element in Jobs %}
+            <div class="job-item">
+                <div class="job-question">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>
+                                {{ element.title }}
+                                <br/>
+                                {{ element.job_type}}
+                            </p>
+                        </div><!--
+                        --><div class="col-md-2">
+                            <a class="button job-button" href="#">
+                                Close
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-answer">
+                    {{ element.description_job|richtext_filters|safe }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1>
+                        Don't be shy
+                    </h1>
+                    <p>
+                        You do not match an open position?
+                        No worries, we always love to hear about great people
+                    </p>
+                    <div class="button-container">
+                        <a class="button" href="mailto:jobs@tanker.io">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#team', 800);
+        });
+
+        $('.job-button').click(function(e) {
+            e.preventDefault();
+            var button = $(this);
+            var faqItem = button.parent().parent().parent().parent();
+            var answer = faqItem.find('.job-answer');
+            answer.slideToggle("slow", function() {
+                if (button.hasClass("read")) {
+                    button.removeClass("read");
+                    button.html("close");
+                }
+                else {
+                    button.addClass("read");
+                    button.html("read");
+                }
+            });
+        });
+    </script>
+{% endblock %}
+

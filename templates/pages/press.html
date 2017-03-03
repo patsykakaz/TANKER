@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="press">
+    <div id="press-header">
+        <div class="header-content">
+            <h1>
+                PRESS
+            </h1>
+            <h3>
+                Thanks for your interest in Tanker !
+            </h3>
+            <h3>
+                We're happy to speak with anyone writing about security or cloud data encryption
+                Please email us at <a href="mailto:press@tanker.io">press@tanker.io</a>
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="press-releases">
+        <h1>Press releases</h1>
+        <div class="container">
+            {% for element in PressRelease_all %}
+                {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:"3" %}
+                    <div class="row">
+                {% endif %}
+                    <div class="col-md-4">
+                        <p>{{ element.date }}</p>
+                        <h3>{{ element.title }} </h3>
+                        <a href='{{ element.lien_PDF.url }}' target='blank'>
+                            Read more <i class='fa fa-download'></i>
+                        </a>
+                    </div>
+                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div id="press-publications">
+        <h1>Publications</h1>
+        <div class="container">
+            {% for element in Publication_all %}
+                {% if forloop.counter0 == 0 or forloop.counter0|divisibleby:"3" %}
+                    <div class="row">
+                {% endif %}
+                    <div class="col-md-4">
+                        <div class='publication'>
+                            <img src="{{ MEDIA_URL }}{% thumbnail element.illustration 400 300 %}" alt="techcrunch"/>
+                            <h3>{{ element.title }}</h3>
+                            <a href="{{ element.lien }}" target='blank'>Read more <i class='fa fa-external-link'></i></a>
+                        </div>
+                    </div>
+                {% if forloop.counter > 1 and forloop.counter|divisibleby:"3" %}
+                    </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+    <div id="press-brand-assets">
+        <h1>Brand assets</h1>
+        <h4>Feel free to use our wordmark and logos</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="{% static "img/press/tanker-white.png" %}" alt="Tanker"/>
+                </div>
+                <div class="col-md-3">
+                    <img src="{% static "img/press/tanker-blue.png" %}" alt="Tanker"/>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static "img/press/tanker-baseline.png" %}" alt="Tanker"/>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="button-container">
+                        <a class="button green" href="#">
+                            FACT SHEET
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#press-releases', 800);
+        });
+    </script>
+{% endblock %}
+

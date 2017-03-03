@@ -1,0 +1,478 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'components/jquery-sticky/jquery.sticky.js' %}"></script>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.faq-link').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo($(this).attr('href'), 800);
+        });
+
+        $(document).ready(function(){
+            $(".faq-menu").sticky({
+                topSpacing: 25,
+                bottomSpacing: 1000
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block main %}
+<div id="support">
+    <div id="support-header">
+        <div class="header-content">
+            <h1>
+                Support Center
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="faq-menu">
+                    <ul>
+                        <li>
+                            <img src="{% static "img/support/faq1.png" %}" alt=""/>
+                            <a href="#title0" class="faq-link">Installation and account management</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq2.png" %}" alt=""/>
+                            <a href="#title1" class="faq-link">Services, files and use</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq3.png" %}" alt=""/>
+                            <a href="#title2" class="faq-link">Encryption and decryption</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq4.png" %}" alt=""/>
+                            <a href="#title3" class="faq-link">Sharing</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq5.png" %}" alt=""/>
+                            <a href="#title4" class="faq-link">Security and privacy</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq6.png" %}" alt=""/>
+                            <a href="#title5" class="faq-link">Administrator account</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq7.png" %}" alt=""/>
+                            <a href="#title6" class="faq-link">Troubleshooting</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/support/faq8.png" %}" alt=""/>
+                            <a href="#title7" class="faq-link">Technical FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8" id="faq-content">
+                <p class="title" id="title0">
+                    <img src="{% static "img/support/faq1.png" %}" alt=""/>
+                    Installation and account management
+                </p>
+
+                <p class="question">What is Tanker?</p>
+
+                <p class="answer">
+                    Tanker is a desktop application that secures your cloud-stored files on your device before it reaches the cloud, without changing any of your habits. Our cloud client allows you to access, edit and encrypt all personal and shared content from your desktop.
+                </p>
+
+                <p class="question">What are the system requirements to run Tanker?</p>
+
+                <p class="answer">Tanker is currently compatible with macOS Yosemite (10.10) and Windows (7 and later).</p>
+
+                <p class="question">Does Tanker work on multiple devices?</p>
+
+                <p class="answer">Tanker is currently a single device desktop application.</p>
+
+                <p class="question">How do I install Tanker?</p>
+
+                <p class="answer">To install our App, follow these instructions:
+                <br/>
+                1.Download Tanker from our website,<br/>
+                2. Enter the activation code you previously received by email,<br/>
+                3. Connect your Dropbox account,<br/>
+                4. Set up a strong password,<br/>
+                5. Generate your private encryption key.<br/>
+                </p>
+                <p class="answer">
+                I don't have any activation code but I would like to use Tanker's beta version. How can I obtain one?</p>
+                <p class="answer">
+                To obtain an activation code, click on the "request a demo" button and fill out the form. Tanker will give you access as soon as possible.</p>
+
+                <p class="question">Do I need administrator privileges on my computer to install?</p>
+
+                <p class="answer">No, Administrator rights are not necessary to install Tanker. They just allow the display of specific icons in the Windows File Explorer.</p>
+
+                <p class="question">I forgot my Dropbox ID and/or password. What do I do?</p>
+
+                <p class="answer">Follow Dropbox's instructions to retrieve your ID and password.</p>
+
+                <p class="question">I installed Tanker on my device. How do I access my Tanker App and my Dropbox files on my desktop?</p>
+
+                <p class="answer">macOS: Run Tanker from your Applications folder. Windows: Run Tanker on the start menu.</p>
+
+                <p class="answer">The files and folders stored and shared in your Dropbox are now accessible through Tanker.</p>
+
+                <p class="question">I am not a Tanker user. I received a request access document in my Dropbox. Why?</p>
+
+                <p class="answer">You received a request access document in your Dropbox because one of your collaborators shared with you a file encrypted with Tanker.</p>
+
+                <p class="answer">To read this file, follow this procedure:
+                <br/>
+                1. Click on the request access button,<br/>
+                2. Register the email address linked to your Dropbox account, in order to receive your Tanker activation code,<br/>
+                3. Download Tanker.<br/>
+                </p>
+                <p class="answer">
+                The installation of Tanker is free, takes less than 1 minute, and will allow you to decrypt and read the files you received.
+                </p>
+
+                <p class="question">I forgot the password of my Tanker account. How do I reset it?</p>
+
+                <p class="answer">If your company uses Tanker, contact your administrator.</p>
+
+                <p class="answer">If your company does not use Tanker and/or if you are an independant worker, your password is lost. Unfortunately there is no way to retrieve your password.</p>
+
+                <p class="answer">To regain access to shared crypted files, delete your Tanker account, create a new Tanker account and ask the owner to share the files with you again.</p>
+
+                <p class="question">Can I connect multiple Dropbox accounts to my Tanker account?</p>
+
+                <p class="answer">No, it is not possible.</p>
+
+                <p class="question">How do I change my password?</p>
+
+                <p class="answer">You can change your password from Tanker systray > Change password. Follow the procedure.</p>
+
+                <p class="question">How do I uninstall Tanker?</p>
+
+                <p class="answer">To uninstall Tanker on macOS:
+                <br/>
+                1. Decrypt your files,<br/>
+                2. Go to your Applications folder and delete Tanker application.<br/>
+                </p>
+                <p class="answer">
+                To uninstall Tanker on Windows:<br/>
+
+                1. Decrypt your files,<br/>
+                2. Delete the folders where Tanker has been installed. Those folders can be found in %APPDATA%/Local/Tanker et %APPDATA%/Roaming/Tanker<br/>
+                </p>
+                <p class="question">What happens to my data after uninstalling Tanker?</p>
+                <p class="answer">
+                Keep in mind that your encryption key is used to decrypt your files. Uninstalling Tanker will destroy your encryption key. In order to keep access to your data, don't forget to decrypt all your personal files and folders before launching the uninstallation process.</p>
+
+                <p class="question">How do I access Tanker Manager?</p>
+
+                <p class="answer">You need to be one of the administrator of your Dropbox team.</p>
+
+                <p class="question">How much is Tanker?</p>
+
+                <p class="answer">The beta version of Tanker is free</p>
+
+                <p class="title" id="title1">
+                    <img src="{% static "img/support/faq2.png" %}" alt=""/>
+                    Services, files and use
+                </p>
+
+                <p class="question">What cloud services does Tanker support?</p>
+
+                <p class="answer">Tanker currently supports Dropbox. If you require Tanker for other cloud storage services, send an email to <a href="mailto:want@tanker.io">want@tanker.io</a></p>
+
+                <p class="question">What file types does Tanker support?</p>
+
+                <p class="answer">Tanker can encrypt any file type on your Cloud storage.</p>
+
+                <p class="question">What information does Tanker secure?</p>
+
+                <p class="answer">Tanker encrypts the content of your files and folders. The tree view and names of your files and folders are not encrypted and remain clear.</p>
+
+                <p class="question">Is there a space limit, or maximum file size to be encrypted?</p>
+
+                <p class="answer">In its current version, Tanker can not encrypt files over 200MB.</p>
+
+                <p class="answer">The only storage space limit is the space available on your cloud storage provider's account.</p>
+
+                <p class="question">How many Dropbox accounts can I connect with Tanker?</p>
+
+                <p class="answer">You can only connect one Dropbox account to your Tanker account.</p>
+
+                <p class="question">Can I use Tanker if Dropbox is not installed on my Desktop?</p>
+
+                <p class="answer">No, you can not. Dropbox and Tanker must be installed on your Desktop to work together.</p>
+
+                <p class="question">Can I use Tanker with Dropbox in my web browser?</p>
+
+                <p class="answer">No, you can't. Tanker is a desktop application.</p>
+
+                <p class="question">Dropbox and Tanker both appear in my file explorer. Should I work my documents stored in Dropbox or with those stored in Tanker?</p>
+
+                <p class="answer">In order to benefit from the encryption features, you have to work with your documents stored in the Tanker folder of your file explorer. Also, you can still manage sharing feature from the dropbox folder.</p>
+
+                <p class="title" id="title2">
+                    <img src="{% static "img/support/faq3.png" %}" alt=""/>
+                    Encryption and decryption
+                </p>
+
+                <p class="question">How does Tanker secure my documents?</p>
+
+                <p class="answer">Tanker encrypts your data to secure it. Encryption is a way to enhance the security of a document by ciphering the content so that it can only be read by the intended recipient who has the correct encryption key to decrypt it.</p>
+
+                <p class="answer">Tanker uses AES-256-GCM and ECC-SECP256 encryption standards to secure your information directly on your device. Only encrypted data is transmitted through the network and stored on cloud storage providers servers.</p>
+
+                <p class="question">How does the encryption process work?</p>
+
+                <p class="answer">The creation of your Tanker account generates a key pair, composed of one public key used to encrypt files and one private key aimed at decrypting files.</p>
+
+                <p class="answer">The public key is sent to our servers and linked to your newly created account. The private key is stored directly on your device.</p>
+
+                <p class="answer">Each file is secured with a dedicated key: a document key. The document key is encrypted with the public key of the user and the private key is used to decrypt it upon reception.</p>
+
+                <p class="answer">When sharing a file or a folder Tanker seamlessly manages the exchange of users public keys.</p>
+
+                <p class="question">Is it safe to store my private encryption key on my device?</p>
+
+                <p class="answer">Your private encryption key is securely stored on your desktop device.</p>
+
+                <p class="answer">Your key is stored in a secure container encrypted with the strong password you established when you created your Tanker account.</p>
+
+                <p class="question">What happens if I lose my encryption keys?</p>
+
+                <p class="answer">You cannot lose your public key because it is stored on Tanker's servers.</p>
+
+                <p class="answer">However, you must be very careful with your private key and your password. You are the only one to have them, and you can not decrypt your files without them.</p>
+
+                <p class="answer">When attached to a company, your administrator can help you recover access to your files.</p>
+
+                <p class="question">How do I encrypt a file?</p>
+
+                <p class="answer">If the file is already in your Dropbox, right-click on the file. Select "Encrypt with Tanker". Otherwise, drag and drop the file from your device to your tanker folder, and it will be automatically encrypted.</p>
+
+                <p class="question">How do I know my file is encrypted?</p>
+
+                <p class="answer">Files encrypted with Tanker are "hidden" in a ".docx file". Encrypted files viewed in Tanker will have a green padlock icon next to the file name.</p>
+
+                <p class="question">Why do encrypted files carry the ".docx" file extension?</p>
+
+                <p class="answer">Tanker uses the .docx extension to generate a preview of the request access file.</p>
+
+                <p class="question">How long is the encryption process?</p>
+
+                <p class="answer">The encryption process is fast:</p>
+
+                <p class="answer">It takes 11 ms to encrypt a 10 Kb file (such as an Office document) and 1.5 second to encrypt a 100 Mb file.</p>
+
+                <p class="question">How much space does the encryption process takes?</p>
+
+                <p class="answer">The encryption process will add about 40 KB to each encrypted file. This is the size of the extension .docx that wraps up your files.</p>
+
+                <p class="question">How do I decrypt a file?</p>
+
+                <p class="answer">Once your Tanker account is connected, your files are automatically decrypted on your desktop. Right-click on the file and select "Decrypt file" in order to decrypt it and read it on your cloud provider in the browser.</p>
+
+                <p class="answer">If you click on 'decrypt', the clear version of your file will be sent to the cloud provider.</p>
+
+                <p class="question">Do I need a premium account to decrypt the file?</p>
+
+                <p class="answer">No. Decryption is always free.</p>
+
+                <p class="question">an I access my encrypted data if I have no internet connection?</p>
+
+                <p class="answer">Yes, you are able to see and access your files and folders even with no internet connection</p>
+
+                <p class="question">What limitations should I expect when working with encrypted?</p>
+
+                <p class="answer">Encrypted files cannot be read through a web browser. To view the contents of an encrypted file, you must open it through Tanker on your Desktop. If you download directly an encrypted file through one of your native cloud services, you will only be able to view the encrypted version.</p>
+
+                <p class="title" id="title3">
+                    <img src="{% static "img/support/faq4.png" %}" alt=""/>
+                    Sharing
+                </p>
+
+                <p class="question">How do I share an encrypted file with someone?</p>
+
+                <p class="answer">You can not share an encrypted file by itself. You have to place this encrypted file in a folder to share it: right click on this folder and select "share".</p>
+
+                <p class="question">How do I share an encrypted folder with someone?</p>
+
+                <p class="answer">You can keep on using the sharing folder features of your Dropbox: right click on the selected folder and select "share".</p>
+
+                <p class="question">I encrypted a folder and shared it, but my recipient doesn't have a Tanker account. What happens?</p>
+
+                <p class="answer">If your recipient does not have a Tanker account, he will be invited to install Tanker in order to decrypt your folders and be able to read files.</p>
+
+                <p class="question">Is there specific requirements to fulfill before sending an encrypted folder?</p>
+
+                <p class="answer">The only requirement is to connect to Tanker.</p>
+
+                <p class="question">I want to share a clear file from Tanker. Is it possible?</p>
+
+                <p class="answer">Thanks to our encrypt/decrypt features linked to each file, you can choose to store and share clear or encrypted files and folders directly from your Tanker account.</p>
+
+                <p class="title" id="title4">
+                    <img src="{% static "img/support/faq5.png" %}" alt=""/>
+                    Security and privacy
+                </p>
+
+                <p class="question">Is Tanker secure?</p>
+
+                <p class="answer">Our zero-knowledge policy guarantees your privacy by encrypting and decrypting your data on your device.</p>
+
+                <p class="answer">All data (file and file metadata) is encrypted client-side and remains encrypted in transit and at rest.</p>
+
+                <p class="answer">Your password is only known by you.</p>
+
+                <p class="question">Who has access to encryption keys?</p>
+
+                <p class="answer">Tanker stores your public encryption key on its servers. You are the only one to possess your private encryption key used to decrypt documents.</p>
+
+                <p class="question">Does Tanker store any of my information?</p>
+
+                <p class="answer">Tanker does not store any of your files. Tanker only stores your public encryption key and the information you use to register: your first name, last name and the email address that constitues your Dropbox Id. This information is stored on our servers based in Paris, France.</p>
+
+                <p class="question">Why does Tanker connect to my Dropbox acount?</p>
+
+                <p class="answer">Tanker needs to connect to Dropbox to be able to handle key sharing by mapping Dropbox users with Tanker public keys.</p>
+
+                <p class="title" id="title5">
+                    <img src="{% static "img/support/faq6.png" %}" alt=""/>
+                    Administrator account
+                </p>
+
+                <p class="question">I am the administrator of my company's Tanker accounts. What does that mean?</p>
+
+                <p class="answer">This means that you have access to the administrator dashboard and that you have access to your company master key.</p>
+
+                <p class="question">How to use the administrator dashboard?</p>
+
+                <p class="answer">The admin dashboard shows you: - how secure is your company, - whose employees or formers employees access your company data, - which files and folders are shared with whom.</p>
+
+                <p class="answer">Backup your company master key</p>
+
+                <p class="answer">As a Tanker company administrator, you are in charge of safeguarding your company master key. When creating your company's first account, a company master key is generated on your device in addition to your own personal encryption key.</p>
+
+                <p class="answer">This master encryption key will be used by all your Team members when encrypting documents making sure that, whenever a key is lost, the master company private key can be used to recover everything.</p>
+
+                <p class="answer">This master company key will be required when: - a hard drive is definitively damaged (user's private key unrecoverable) - a device is lost (user's private key lost) - a password is lost (user's private key lost)</p>
+
+                <p class="answer">For all those reasons, as a company administrator you need to make sure this master key cannot be lost nor stolen and that it is safely stored.</p>
+
+                <p class="question">macOS</p>
+
+                <p class="answer">Open a Finder window and press: SHIFT + COMMAND + G On the popup window, type:</p>
+
+                <p class="answer">~/Library/Application Support/Tanker/</p>
+                <p class="answer">Finder will open the Tanker home folder.</p>
+
+                <p class="answer">Detect the folder containing your Tanker user id in hexadecimal (eg. 38b4424b9f95f42). In this folder, you will find a file with a .tkr extension (ex. 38b4424b9f95f42.tkr).</p>
+
+                <p class="answer">Save this file to a USB stick and store it in a safe place (typically a safe lock).</p>
+
+                <p class="answer">You Tanker password will be required in order to use this master key. Make sure not to lose it.</p>
+
+                <p class="question">Windows</p>
+
+                <p class="answer">Open an Explorer Window and on the address bar enter:</p>
+
+                <p class="answer">%APPDATA%\Tanker\ then press enter.</p>
+
+                <p class="answer">Windows explorer opens the Tanker home folder.</p>
+
+                <p class="answer">Detect the folder containing your Tanker user id in hexadecimal (eg. 38b4424b9f95f42). In this folder, you will find a file with a .tkr extension (ex. 38b4424b9f95f42.tkr).</p>
+
+                <p class="answer">Save this file to a USB stick and store it in a safe place (typically a safe lock).</p>
+
+                <p class="answer">You Tanker password will be required in order to use this master key. Make sure not to loose it.</p>
+
+                <p class="title" id="title6">
+                    <img src="{% static "img/support/faq7.png" %}" alt=""/>
+                    Troubleshooting
+                </p>
+
+                <p class="question">macOS</p>
+
+                <p class="question">I cannot edit documents with Microsoft Office Word or Excel within Tanker</p>
+
+                <p class="answer">If you are not using a recent enough macOS version (Sierra or later), you will be unable to directly edit files with Microsoft Office Word or Excel, and instead get a message saying the files are read-only.</p>
+
+                <p class="answer">To fix the issue, you can either:
+                <br/>
+                - Upgrade to macOS Sierra<br/>
+                - Copy the files outside the Tanker folder, edit them, and copy them back when you are done
+                </p>
+
+                <p class="question">I cannot drag and drop Tanker to Applications</p>
+
+                <p class="answer">During installation you will be required to drag and drop Tanker to your Application Folder. This operation may require an administrator password. If you are unable to provide it, simply drag and drop the Tanker icon to your desktop.</p>
+
+                <p class="question">No icon, no context menu</p>
+
+                <p class="answer">Try the following options:
+                <br/>
+                1. Reboot your computer<br/>
+                2. Go to your computer settings panel, click on the "Extensions" icon and make sure "TankerApp" is properly checked<br/>
+                3. Make sure you don't have multiple instances of Tanker running. If you have Tanker running on another session of the same device, close it first.<br/>
+                4. Make sure your macOS is up to date (Apple regularly patches bugs on Finder Integration)</p>
+
+                <p class="question">Tanker is hanging up at launch. How can you fix it?</p>
+
+                <p class="answer">This bug only occurs when you try to launch Tanker from your “favorites” folders. To launch Tanker App, go to your folder Applications, double click on Tanker and enter your password to connect.</p>
+
+                <p class="title" id="title7">
+                    <img src="{% static "img/support/faq8.png" %}" alt=""/>
+                    Technical FAQ
+                </p>
+
+                <p class="question">How is randomness generated?</p>
+
+                <p class="answer">We're using the standard HMAC DRBG.</p>
+
+                <p class="question">What encryption algorithms does Tanker use?</p>
+
+                <p class="answer">Tanker uses the following algorithms:</p>
+
+                <img src="{% static "img/support/algorithms.png" %}" alt="Tanker algorithms"/>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about-tanker">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Ask us about Tanker</h1>
+                <p>
+                    Need help? Have feedback? Just want to talk about Security?
+                    Don’t hesitate to reach out
+                </p>
+            </div><!--
+            --><div class="col-md-3">
+                <img src="{% static "img/support/form.png" %}" alt="Submit help request"/>
+                <h4>Submit help request</h4>
+            </div><!--
+            --><div class="col-md-3">
+                <img src="{% static "img/support/phone.png" %}" alt="Tanker phone"/>
+                <h4>Tel: +33 (0)1 85 09 21 64</h4>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

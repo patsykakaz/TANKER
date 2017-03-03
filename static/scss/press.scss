@@ -1,0 +1,151 @@
+#press {
+    #press-header {
+        background-image: url(../../static/img/press/header.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        background-attachment: fixed;
+
+        @media #{$mobile} {
+            min-height: 550px;
+        }
+
+        .header-content {
+            padding: 9% 0 5% 0;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, 0));
+            text-align: center;
+
+            @media #{$tablet} {
+                padding-top: 14%;
+            }
+
+            @media #{$mobile} {
+                top: 70px;
+                left: 0;
+                position: relative;
+                width: 100%;
+                @include prefix(transform, none);
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            h1 {
+                font-size: 33px;
+                color: $white;
+                font-weight: 600;
+                padding-bottom: 0;
+                text-align: center;
+                padding-left: 0;
+                margin: 0;
+                font-weight: 300;
+                text-transform: uppercase;
+                padding-right: 0;
+                margin: 0;
+                line-height: 55px;
+                padding-top: 2%;
+            }
+
+            h3 {
+                font-size: 18px;
+                color: $white;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        &:after {
+                            border-color: $white;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: $white;
+                text-align: left;
+                padding-bottom: 20px;
+            }
+
+            .button-container {
+                .button {
+                    @include prefix(box-shadow, none);
+
+                    img {
+                        max-width: 14px;
+                        margin-left: 8px;
+                        margin-bottom: 2px;
+                        position: relative;
+                        top: 0px;
+                        @include prefix(transition, all 0.2s ease);
+                    }
+
+                    &:hover {
+                        img {
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #press-releases, #press-publications {
+        padding-bottom: 5%;
+
+        .col-md-4 {
+            padding: 0 5% 5% 5%;
+
+            img {
+                @media #{$tablet} {
+                    width: 50%;
+                }
+            }
+        }
+
+        a {
+            color: $blue2;
+
+            &:hover {
+                &:after {
+                    border-color: $blue2;
+                }
+            }
+        }
+    }
+
+    #press-publications {
+        background: $lightGrey2;
+    }
+
+    #press-brand-assets {
+        .col-md-3, .col-md-6 {
+            text-align: center;
+        }
+
+        h1 {
+            padding-bottom: 1%;
+        }
+
+        h4 {
+            font-weight: 300;
+            color: $black;
+            padding-bottom: 5%;
+            text-align: center;
+        }
+
+        img {
+            max-height: 200px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .button-container {
+            text-align: center;
+            padding-bottom: 7%;
+        }
+    }
+
+}

@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="user-first">
+    <div id="user-header">
+        <div class="header-content">
+            <h1>
+                Our priority: the user
+            </h1>
+            <h3>
+                80% of employees use public clouds to be more productive <br/>while IT spends millions to fight against it
+            </h3>
+            <div class="button-container">
+                <a class="button blue-gradient" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <h3>An encryption software?</h3>
+                    <p>
+                        Security solutions should be easy to use and compliment your workflows.
+                        Good news: you can now embrace your favorite cloud services at work, Tanker makes sure that all your data stored and exchanged is 100% business compliant.
+                    </p>
+                    <p>
+                        No additional process or complex installation, Tanker app seamlessly ciphers data locally on your devices before it’s transported and stored on Dropbox or Microsoft servers.
+                    </p>
+                    <p>
+                        Only the people you have chosen to collaborate with will access your files upon invitation, whether they are internal or external collaborators.
+                        Others will just see a long, meaningless string of numbers.
+                    </p>
+                </div>
+                <div class="col-md-6 right">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.6"
+                    data-to="0.1"
+                    data-opacity="0"
+                    src="{% static "img/user-first/schema1.png" %}" alt="Encryption software"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="how-to-install">
+        <h3>Easy setup</h3>
+        <div class="container">
+            <div class="row">
+                <div 
+                    class="col-md-4 animateme scrollme"
+                    data-when="span"
+                    data-from="0.5"
+                    data-to="0.1"
+                    data-opacity="0"
+                    >
+                    <img src="{% static "img/user-first/schema2.png" %}" alt="Download Tanker"/>
+                    <p><strong>1.</strong> Download Tanker for your OS</p>
+                </div>
+                <div 
+                    class="col-md-4 animateme scrollme"
+                    data-when="span"
+                    data-from="0.6"
+                    data-to="0.2"
+                    data-opacity="0"
+                    >
+                    <img src="{% static "img/user-first/schema3.png" %}" alt="Link to Tanker"/>
+                    <p><strong>2.</strong> Pair your cloud account to your Tanker application</p>
+                </div>
+                <div class="col-md-4 animateme scrollme"
+                    data-when="span"
+                    data-from="0.7"
+                    data-to="0.3"
+                    data-opacity="0"
+                    >
+                    <img src="{% static "img/user-first/schema4.png" %}" alt="Generate your Tanker key"/>
+                    <p><strong>3.</strong> Generate your unique encryption key, start securing your data in seconds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="encrypt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <h3>Encrypt as you go</h3>
+                    <p>
+                        Work and stock your files directly in your Tanker drive.
+                        Tanker works behind the scenes to encrypt your files before they leave your computer.
+                    </p>
+                </div><!--
+                --><div class="col-md-6 right">
+                    <img src="{% static "img/user-first/schema5.png" %}" alt="Encryption software"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collaborate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <img src="{% static "img/user-first/schema7.png" %}" alt="Encryption software"/>
+                </div><!--
+                --><div class="col-md-6 right">
+                    <h3>Collaborate securely</h3>
+                    <p>
+                        Keep sharing files the same way you did before.<br/>
+                        - Seamlessly with your team members<br/>
+                        - Upon simple free invitation with external partners <br/>
+                    </p>
+                    <p>
+                        Tanker does not require any expertise nor infrastructure; our pure software solution is open to everyone. Recipients outside your company circle can simply install the Tanker app in one click, without the need of admin rights.
+                    </p>
+                    <div class="button-container">
+                        <a class="button" href="/easy-to-manage">
+                            I WANT TO IMPLEMENT IT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq">
+        <h2>
+            Frequently asked...
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="question">
+                        Am I supposed to download Dropbox or OneDrive?
+                    </p>
+                    <p class="answer">
+                        Yes, you always need to have Dropbox or OneDrive desktop client setup on your computer. Tanker’s know-how is to provide world-class encryption on your data. We let our cloud partners manage what they are the best at: stock, sync and share.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="question">
+                        What if I forget my PIN code or lose my device?
+                    </p>
+                    <p class="answer">
+                        If you lose your PIN Code, your unique encryption key will be cancelled and you will have to click “Reset PIN Code” to get back access to your data. Your administrator (someone in your IT team) will make sure you can access it back.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="question">
+                        What if the person I want to share a document with does not have Tanker?
+                    </p>
+                    <p class="answer">
+                        Tanker’s infrastructure enables you to share documents inside and outside your company with full end-to-end encryption. <br/>
+                        - If you share a collaborative folder, the recipient will have to setup Tanker on his computer In order to decrypt the documents. As you have experienced, installing Tanker only takes a few seconds so your collaborator will be up and running in not time.<br/>
+                        - If you share a download link, the recipient will not need to setup anything (coming soon)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="more-questions">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="button-container">
+                        <a class="button" href="/support">
+                            More questions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#what', 800);
+        });
+    </script>
+{% endblock %}

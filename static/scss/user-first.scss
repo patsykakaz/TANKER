@@ -1,0 +1,308 @@
+#user-first {
+    #user-header {
+        background-image: url(../../static/img/user-first/header.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @media #{$tablet} {
+            padding-top: 10%;
+        }
+
+        @media #{$mobile} {
+            min-height: 550px;
+        }
+
+        .header-content {
+            padding: 9% 0 5% 0;
+            position: relative;
+            top: 30%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, 0));
+            text-align: center;
+            width: 65%;
+
+            @media #{$mobile} {
+                top: 70px;
+            }
+
+            h1 {
+                color: $blue;
+                margin: 0;
+                font-size: 33px;
+                line-height: 55px;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-bottom: 0;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .button-container {
+                .button {
+                    @include prefix(box-shadow, none);
+
+                    img {
+                        max-width: 14px;
+                        margin-left: 8px;
+                        margin-bottom: 2px;
+                        position: relative;
+                        top: 0px;
+                        @include prefix(transition, all 0.2s ease);
+                    }
+
+                    &:hover {
+                        img {
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #what {
+        position: relative;
+        height: 100vh;
+        min-height: 460px;
+        background-image: url(../../static/img/user-first/background-what.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @media #{$tablet} {
+            min-height: 750px;
+        }
+
+        @media #{$mobile} {
+            height: 100%;
+            min-height: 0;
+        }
+
+        // .container {
+        //     position: absolute;
+        //     top: 50%;
+        //     @include prefix(transform, translateY(-50%));
+        //     width: 100%;
+        //     padding: 0 10%;
+
+        //     @media #{$mobile} {
+        //         position: relative;
+        //         top: 0;
+        //         @include prefix(transform, none);
+        //     }
+        // }
+
+        .cover {
+            position: absolute;
+            bottom: 10%;
+        }
+
+        .col-md-6 {
+            &.left {
+                padding: 3% 5% 10% 2.5%;
+
+                @media #{$mobile} {
+                    padding: 25px;
+
+                    .button {
+                        font-size: 10px;
+                    }
+                }
+
+                h3 {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            &.right {
+                padding: 10% 8% 0 0;
+                text-align: right;
+                padding-right: 0;
+
+                @media #{$tablet} {
+                    padding: 25px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 75%;
+                    max-width: 750px;
+
+                    @media #{$tablet} {
+                        width: 50%;
+                    }
+
+                    @media #{$mobile} {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #how-to-install {
+        background-color: $lightBlue;
+        padding-bottom: 5%;
+
+        h3 {
+            margin-top: 0;
+            text-align: center;
+            padding-top: 5%;
+            padding-bottom: 3%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .col-md-4 {
+            $padding: 5%;
+
+            padding-left: $padding;
+            padding-right: $padding;
+            text-align: center;
+
+            p {
+                margin-top: 20px;
+                text-align: center;
+                font-weight: 500;
+                color: $black;
+            }
+
+            img {
+                width: 75%;
+
+                @media #{$tablet} {
+                    max-width: 25%;
+                }
+
+                @media #{$mobile} {
+                    max-width: 150px;
+                }
+            }
+        }
+
+        #how-do-i-use {
+            h4 {
+                text-transform: none;
+                line-height: 24px;
+                text-align: left;
+
+                strong {
+                    color: $yellow;
+                }
+            }
+
+            img {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .button-container {
+            text-align: center;
+
+            .button {
+                margin-right: 0;
+            }
+        }
+    }
+
+    #encrypt {
+        background-image: url(../../static/img/user-first/background-encrypt.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .container {
+            padding: 5% 10%;
+
+            img {
+                width: 100%;
+            }
+
+            .col-md-6 {
+                display: inline-block;
+                float: none;
+                vertical-align: middle;
+
+                &.right {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #collaborate {
+        background-image: url(../../static/img/user-first/background-collaborate.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .container {
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+            img {
+                width: 100%;
+            }
+
+            .col-md-6 {
+                display: inline-block;
+                float: none;
+                vertical-align: middle;
+
+                &.left {
+                    text-align: center;
+                    padding-right: 5%;
+                }
+            }
+        }
+    }
+
+    #faq {
+        padding-bottom: 5%;
+
+        h2 {
+            padding-top: 3%;
+            text-align: center;
+        }
+
+        .question {
+            color: $green;
+            font-weight: 600;
+            padding-bottom: 10%;
+        }
+
+        @media #{$tablet} {
+            .col-md-4 {
+                padding-bottom: 5%;
+
+                .question {
+                    padding-bottom: 2%;
+                }
+            }
+        }
+
+        #more-questions {
+            text-align: center;
+
+            .button {
+                @include prefix(box-shadow, none);
+                border-radius: 50px;
+                text-transform: none;
+                background: $green;
+
+                &:hover {
+                    @include prefix(box-shadow, 2px 2px 6px 0px $grey);
+                }
+            }
+        }
+    }
+}

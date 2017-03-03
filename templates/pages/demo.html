@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block main %}
+<div id="demo">
+    <div id="demo-header">
+        <div class="header-content">
+            <h1>
+                Contact
+            </h1>
+            <h3>
+                Get in touch with us to learn more about
+                how Cloud end-to-end encryption technology can help your organization
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#contact-popup" id="learn-more">
+                    Request a demo
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>General enquiries</h1>
+                <p><a href="mailto:contact@tanker.io">contact@tanker.io</a></p>
+            </div>
+            <div class="col-md-4">
+                <h1>Office</h1>
+                <p>
+                    71 rue Faubourg Saint Martin<br/>
+                    75010 Paris, France
+                </p>
+                <p id="phone">
+                    <img src="{% static "img/demo/phone.png" %}" alt="phone number"/><span>&nbsp;+33&nbsp;(0)1&nbsp;85&nbsp;09&nbsp;21&nbsp;64</span>
+                </p>
+                
+            </div>
+            <div class="col-md-4" id="social">
+                <h1>Social</h1>
+                <p>
+                    <a href="#"><img src="{% static "img/demo/facebook.png" %}" alt="Facebook"/></a>
+                    <a href="#"><img src="{% static "img/demo/linkedin.png" %}" alt="Linkedin"/></a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#learn-more').magnificPopup({
+                type:'inline',
+                closeOnBgClick: true,
+                midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+                mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+                zoom: {
+                  enabled: true, // By default it's false, so don't forget to enable it
+
+                  duration: 300, // duration of the effect, in milliseconds
+                  easing: 'ease-in-out', // CSS transition easing function
+
+                  // The "opener" function should return the element from which popup will be zoomed in
+                  // and to which popup will be scaled down
+                  // By defailt it looks for an image tag:
+                  opener: function(openerElement) {
+                    // openerElement is the element on which popup was initialized, in this case its <a> tag
+                    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                  }
+                }
+
+            });
+        });
+    </script>
+{% endblock %}

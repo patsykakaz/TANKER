@@ -1,0 +1,27 @@
+{% load i18n pages_tags %}
+{% spaceless %}
+
+<ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="/user-first"{% if request.path == '/user-first/'%} class="active"{% endif %}>{% trans "How it works" %}</a>
+    </li>
+    <li>
+        <a href="/easy-to-manage"{% if request.path == '/easy-to-manage/'%} class="active"{% endif %}>{% trans "Enterprise" %}</a>
+    </li>
+    <li>
+        <a href="/cloud-security"{% if request.path == '/cloud-security/'%} class="active"{% endif %}>{% trans "Cloud security" %}</a>
+    </li>
+    <li>
+        <a href="/about-us"{% if request.path == '/about-us/'%} class="active"{% endif %}>{% trans "About us" %}</a>
+    </li>
+    <li>
+        <a href="/support"{% if request.path == '/support/'%} class="active"{% endif %}>{% trans "Support" %}</a>
+    </li>
+    <li class="button-container">
+        <a class="btn btn-default navbar-btn request-demo" href="#contact-popup">
+            {% trans "Request demo" %}
+        </a>
+    </li>
+</ul>
+
+{% endspaceless %}

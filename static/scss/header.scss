@@ -1,0 +1,186 @@
+#header {
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    @include prefix(box-shadow, none);
+
+    .container {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    &.navbar-blue {
+        // background: $white;
+        // @include prefix(box-shadow, 0px 4px 45px 25px $white);
+        border-radius: 0;
+
+        .navbar-header {
+            .navbar-toggle {
+                border-color: $blue;
+
+                .icon-bar {
+                    background-color: $blue;
+                }
+
+                &:hover, &:focus {
+                    background-color: $blue;
+
+                    .icon-bar {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                li {
+                    a {
+                        color: $darkGrey;
+
+                        @media #{$mobile} {
+                            color: $white;
+                        }
+
+                        &:hover, &.active {
+                            color: $blue;
+
+                            @media #{$mobile} {
+                                color: $darkGrey;
+                            }
+
+                            &:after {
+                                border-top-color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-header {
+        padding-top: 20px;
+        margin: 0;
+        padding-left: 10%;
+
+        .navbar-brand {
+            padding: 5px 20px;
+
+            &:after {
+                content: none;
+            }
+        }
+
+        .navbar-toggle {
+            margin-top: 0;
+            border-color: $white;
+            @include prefix(transition, all 0.2s ease);
+
+            .icon-bar {
+                background-color: $white;
+            }
+
+            &:hover, &:focus {
+                background-color: $white;
+
+                .icon-bar {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        width: 100%;
+
+        @media #{$mobile} {
+            background: $blue;
+        }
+
+        .navbar-nav {
+            margin-right: 0;
+            padding-right: 10%;
+
+            @media #{$mobile} {
+                margin-right: -15px;
+                padding-right: 0;
+            }
+
+            li {
+                padding-bottom: 0;
+                padding-top: 30px;
+                padding-left: 0;
+                padding-right: 33px;
+                font-weight: 400;
+
+                &.button-container {
+                    padding: 0;
+
+                    @media #{$mobile} {
+                        padding: 0 20px;
+                    }
+                }
+
+                @media #{$mobile} {
+                    text-align: center;
+                    padding: 0 20px;
+                }
+
+                a {
+                    color: $white;
+                    text-shadow: none;
+                    padding: 0;
+                    @include prefix(transition, all 0.2s ease);
+                    @include prefix(box-shadow, none);
+
+                    &.btn {
+                        margin-top: 20px;
+                        padding: 9px 15px;
+                        background: transparent;
+                        color: $yellow;
+                        border-color: $yellow;
+
+                        &:hover {
+                            background: $yellow;
+                            color: $white;
+                        }
+
+                        &:after {
+                            border: none;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        right: 0;
+                        bottom: 4px;
+                        border-top: 1px solid transparent;
+                        @include prefix(transition, all 0.2s ease-in-out);
+                    }
+
+                    &:hover, &.active {
+                        @media #{$mobile} {
+                            color: $darkGrey;
+                        }
+
+                        &:after {
+                            border-top-color: $white;
+                            bottom: 0;
+
+                            @media #{$mobile} {
+                                border-top-color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

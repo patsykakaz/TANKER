@@ -1,0 +1,183 @@
+#support {
+    background-color: $white;
+    padding-bottom: 5%;
+
+    #support-header {
+        @media #{$mobile} {
+            min-height: 200px;
+        }
+
+        .header-content {
+            padding: 9% 0 5% 0;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, 0));
+            text-align: center;
+
+            @media #{$tablet} {
+                padding-top: 14%;
+            }
+
+            @media #{$mobile} {
+                top: 70px;
+                left: 0;
+                position: relative;
+                width: 100%;
+                @include prefix(transform, none);
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            h1 {
+                font-size: 33px;
+                font-weight: 600;
+                padding-bottom: 0;
+                text-align: center;
+                padding-left: 0;
+                margin: 0;
+                font-weight: 300;
+                padding-right: 0;
+                margin: 0;
+                line-height: 55px;
+                padding-top: 2%;
+            }
+        }
+    }
+
+    .col-md-4 {
+        padding-top: 90px;
+        padding-right: 40px;
+
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+
+    .faq-menu {
+        background-color: $white;
+        margin-top: 0;
+
+        h1 {
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                border-bottom: 1px solid $grey;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                img {
+                    width: 15px;
+                    display: inline-block;
+                }
+
+                a {
+                    display: inline-block;
+                    color: $black;
+                    padding: 10px 30px;
+                    @include prefix(transition, all 0.2s ease);
+
+                    &:after {
+                        content: none;
+                    }
+
+                    &:hover, &:focus {
+                        color: $grey;
+                        text-decoration: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #faq-content {
+        @media #{$mobile} {
+            padding-left: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .title {
+            font-size: 30px;
+            color: $black;
+
+            img {
+                width: 35px;
+                display: inline-block;
+                margin-right: 30px;
+            }
+
+            &:not(:first-of-type) {
+                padding-top: 30px;
+            }
+        }
+
+        .question {
+            padding-top: 25px;
+            color: $blue2;
+            list-style: disc outside none;
+            display: list-item;
+        }
+
+        .answer {
+            font-weight: 300;
+        }
+    }
+
+    .container {
+        padding-bottom: 5%;
+    }
+
+    #about-tanker {
+        background: $lightGrey2;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        .row {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: left;
+            padding-left: 0;
+            color: $darkGrey;
+        }
+
+        .col-md-3, .col-md-6 {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .col-md-3 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            border-left: 1px solid $grey;
+
+            @media #{$tablet} {
+                border-left: none;
+            }
+
+            img {
+                width: 30px;
+                display: inline-block;
+            }
+
+            h4 {
+                display: inline-block;
+            }
+        }
+    }
+}

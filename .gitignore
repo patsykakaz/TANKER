@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*.db
+.DS_Store
+.coverage
+migrations
+local_settings.py
+static/scss/*.css
+static/scss/*.css.map
+static/components/
+

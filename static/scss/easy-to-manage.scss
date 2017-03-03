@@ -1,0 +1,219 @@
+#easy-to-manage {
+    #easy-to-manage-header {
+        background-image: url(../../static/img/easy-to-manage/header.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @media #{$mobile} {
+            min-height: 580px;
+        }
+
+        .header-content {
+            padding: 13% 0 8% 0;
+            position: relative;
+            top: 30%;
+            left: 50%;
+            @include prefix(transform, translate(-50%, 0));
+            color: $white;
+            text-align: center;
+            width: 65%;
+
+            @media #{$tablet} {
+                padding-top: 14%;
+            }
+
+            @media #{$mobile} {
+                top: 70px;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 33px;
+                line-height: 55px;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-bottom: 0;
+                color: $white;
+            }
+
+            h3 {
+                font-size: 18px;
+                color: $white;
+            }
+
+            .button-container {
+                .button {
+                    @include prefix(box-shadow, none);
+
+                    img {
+                        max-width: 14px;
+                        margin-left: 8px;
+                        margin-bottom: 2px;
+                        position: relative;
+                        top: 0px;
+                        @include prefix(transition, all 0.2s ease);
+                    }
+
+                    &:hover {
+                        img {
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        .row {
+            margin: 0;
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+            .col-md-6 {
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
+                text-align: center;
+
+                img {
+                    width: 90%;
+                }
+
+                h2, p {
+                    text-align: left;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                &.left {
+                    text-align: left;
+                    padding-left: 0;
+
+                    @media #{$mobile} {
+                        text-align: center;
+                        padding-right: 0;
+                    }
+                }
+
+                &.right {
+                    text-align: right;
+                    padding-right: 0;
+                    padding-left: 5%;
+
+                    @media #{$mobile} {
+                        text-align: center;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .col-md-12 {
+                text-align: center;
+            }
+        }
+    }
+
+    #easy-to-manage-1 {
+        background-image: url(../../static/img/easy-to-manage/background-easy-to-manage-1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        img {
+            @media #{$tablet} {
+                width: 50%;
+            }
+        }
+    }
+
+    #easy-to-manage-2 {
+        .container {
+            padding-left: 3%;
+        }
+    }
+
+    #cloud-compliance {
+        padding: 3% 28%;
+
+        p {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: center;
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 5%;
+        }
+
+        .button-container {
+            text-align: center;
+            padding-bottom: 0;
+        }
+    }
+
+    #faq {
+        padding-bottom: 3%;
+
+        h2 {
+            padding-top: 3%;
+            text-align: center;
+        }
+
+        .row {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .question {
+            color: $green;
+            padding-bottom: 10%;
+            font-weight: 600;
+
+            &.one-line {
+                padding-bottom: 17%;
+
+                @media #{$tablet} {
+                    padding-bottom: 10%;
+                }
+            }
+        }
+
+        @media #{$tablet} {
+            .col-md-4 {
+                padding-bottom: 5%;
+
+                .question {
+                    padding-bottom: 2%;
+                }
+            }
+        }
+
+        #more-questions {
+            text-align: center;
+
+            .row {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .button {
+                @include prefix(box-shadow, none);
+                border-radius: 50px;
+                text-transform: none;
+                background: $green;
+
+                &:hover {
+                    @include prefix(box-shadow, 2px 2px 6px 0px $grey);
+                }
+            }
+        }
+    }
+
+}

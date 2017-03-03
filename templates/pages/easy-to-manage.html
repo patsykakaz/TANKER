@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="easy-to-manage">
+    <div id="easy-to-manage-header">
+        <div class="header-content">
+            <h1>
+                ENTERPRISE
+            </h1>
+            <h3>
+                « Cloud strategies are the foundation for staying relevant in a fast-paced world »<br/>
+                Ed Anderson, research vice president at Gartner
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="easy-to-manage-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <h2>
+                        Experience quick and easy deployment
+                    </h2>
+                    <p>
+                        Finally reap in all the benefits of the Cloud while maintaining IT Oversight, Control and Compliance.
+                    </p>
+                    <p>
+                        So far users have always found ways to bypass complex security solutions and revert to more convenient and less secure services. Turn all your employees into security ambassadors by empowering them with intuitive tools they actually want to use, secured by design.
+                    </p>
+                    <p>
+                        No complex set up, It only takes 1 minute for users to install our software.
+                    </p>
+                    <p>
+                        No training required, Tanker works seamlessly with the clouds they, and 700 million other users, love and use already.
+                    </p>
+                    <p>
+                        Finally a tool which ease and speed of adoption will surprise you.
+                    </p>
+                </div><!--
+                --><div class="col-md-6 right">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.4"
+                    data-to="0.1"
+                    data-opacity="0"
+                    data-translatex="200"
+                    src="{% static "img/easy-to-manage/schema2.png" %}" alt="Experience quick and easy deployment with Tanker"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="easy-to-manage-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.4"
+                    data-to="0.1"
+                    data-opacity="0"
+                    data-translatex="-200"
+                    src="{% static "img/easy-to-manage/manage-users-keys.png" %}" alt="Manage users & keys with Tanker"/>
+                </div><!--
+                --><div class="col-md-6 right">
+                    <h2>
+                        Manage users & keys
+                    </h2>
+                    <p>
+                        Tanker encrypts files automatically so there is no need to rely on end-users to decide what information to protect.
+                    </p>
+                    <p>
+                        Admins get a complete insight over their team’s sharing and encryption activity, send invites, revoke accesses, block devices and reset accounts, everything live from their centralized Dashboard. 
+                    </p>
+                    <p>
+                        Tanker’s user management combined with existing cloud apps security features gives complete control and visibility over your organization’s corporate data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container background-blue" id="cloud-compliance">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>The cloud’s compliance challenge</h3>
+                <p>
+                    Many businesses struggle to achieve compliance in their systems in this fast-changing cloud era.<br/> 
+                    Tanker’s strong end-to-end encryption technology has passed complete third-party audits from world-class experts (Backers) and is the first public cloud encryption layer to be certified by the French ANSSI.
+                </p>
+                <p>
+                    Productivity and security, together at last to facilitate the digital transition towards the new best-in-class collaborative platforms.<br/>
+                    And offer a pragmatic response to the growing issue of Shadow IT and BYOD.
+                </p>
+                <p>
+                    Tanker ensures you meet strict data compliance requirements such as HIPAA-HITECH, FERPA, ITAR, busPCI Data Security Standard, Data Protection Act, EU Data Protective Directive.
+                </p>
+                <div class="button-container">
+                    <a class="button" href="/demo">
+                        Request a demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq">
+        <h2>
+            Frequently asked...
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="question">
+                        Can encryption impact the machine performance?
+                    </p>
+                    <p class="answer">
+                        By design, we craft our encryption algorithms to make sure they won’t imact the user experience. For instance: encrypting 1 GB will take up to 4 minutes and impact storage to +1-4%.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="question one-line">
+                        How much is Tanker?
+                    </p>
+                    <p class="answer">
+                        Just contact us to get a demo and personal quote for Tanker.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="question">
+                        What do I have to change in my environment to implement Tanker?
+                    </p>
+                    <p class="answer">
+                        Almost nothing. If you have a firwall, just authorise Tanker subdomains.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="more-questions">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="button-container">
+                        <a class="button" href="/support">
+                            More questions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#easy-to-manage-1', 800);
+        });      
+    </script>
+{% endblock %}

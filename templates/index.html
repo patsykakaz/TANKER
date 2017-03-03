@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="home">
+    <div id="home-header">
+        <div class="header-content">
+            <h1>
+                Embrace the clouds you love
+            </h1>
+            <h3>
+                Encrypt private data in public clouds effortlessly 
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" id="arrow" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <h2>Regain control of your data</h2>
+                    <p>
+                        Cloud applications have reshaped the way we work, as well as the notions of Data Ownership and Sovereignty.
+                        Tanker allows businesses that integrated cloud services into their workflows, to take back full ownership of their data.
+                    </p>
+                    <p>
+                        Our end-to- end encryption layer turns Dropbox and Microsoft OneDrive into bulletproof and trustworthy workspaces, only accessible with your exclusive keys, ensuring your cloud-stored data total protection and privacy.
+                    </p>
+                    <p>
+                        Thereby “privatizing” your public cloud, Tanker lets your organization benefit from its wonderful infrastructure and performance.
+                    </p>
+                    <div class="button-container">
+                        <a class="button" href="/user-first">How does it work?</a>
+                        <!-- <a class="button white" href="/cloud-security">Let's talk about <strong>encryption</strong></a> -->
+                    </div>
+                </div><!--
+                --><div class="col-md-6 right">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.4"
+                    data-to="0.1"
+                    data-opacity="0"
+                    data-translatex="200"
+                    src="{% static "img/schema1.png" %}" alt="Engineered for"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="user-first">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 left ">
+                    <img 
+                    class="animateme scrollme"
+                    data-when="span"
+                    data-from="0.4"
+                    data-to="0.1"
+                    data-opacity="0"
+                    data-translatex="-200"
+                    src="{% static "img/user-first.png" %}" alt="Comparison with Tanker"/>
+                </div>
+                <div class="col-md-5 right">
+                    <h2>Security and Simplicity are inseparable</h2>
+                    <p>
+                        Our biggest challenge was to add sophisticated cryptography on top of the most user-friendly services, without interfering with the great user experience that made them so successful in the first place.
+                    </p>
+                    <p>
+                        Fully intuitive and user-focused, Tanker is designed to work in harmony with your favourite applications.
+                    </p>
+                    <p>
+                        Simply install Tanker and keep exchanging files with internal and external collaborators the way you did before, your data is now 100% yours.
+                    </p>
+                    <div class="button-container">
+                        <a class="button request-demo" href="#contact-popup">
+                            Request a demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="security">
+        <div class="container" id="security-intro">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>
+                        Cutting-edge security
+                    </h2>
+                    <p>
+                        More and more businesses are adopting Dropbox and Microsoft OneDrive to collaborate and synchronize their files. 
+                        Tanker offers encryption and integrity without getting in the way - it simply plugs into your favorite cloud solution and adds those missing security features you’ve been wanting.
+                    </p>
+                    <p>
+                        Working as a full end-to- end endpoint encryption software, Tanker assigns users a private encryption key, securely stored on their personal device.
+                        Each files travel with a public key, and can only be deciphered with the targeted user’s private key.
+                    </p>
+                    <p>
+                        Our seamless, impenetrable and worry-free data encryption keeps your business moving forward.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="button-container">
+                        <a class="button blue" href="/cloud-security">
+                            Learn more about security
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        class="animateme scrollme"
+        data-when="span"
+        data-from="0.4"
+        data-to="0.1"
+        data-opacity="0"
+        src="{% static "img/schema.png" %}" class="security-schema" alt="Tanker schema"/>
+    </div>
+<!--
+    <div id="available-for">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Available for</h1>
+                    <div class="group">
+                        <div class="group-item left">
+                            <img src="{% static "img/onedrive.png" %}" alt="One Drive"/>
+                        </div>
+                        <div class="group-item right">
+                            <img src="{% static "img/dropbox.png" %}" alt="Dropbox"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <div id="partners">
+        <div class="container">
+            <div class="row"><!--
+                --><div class="col-md-4" id="anssi">
+                    <a href="https://www.ssi.gouv.fr/entreprise/certification_cspn/tanker-version-1-7-2-pour-windows-10-associe-a-submarine-1-1-1-et-botan-1-11-31/"><img src="{% static "img/anssi.png" %}" alt="ANSSI"/></a>
+                    <p>Certified</p>
+                </div><!--
+                --><div class="col-md-4 big">
+                    <img src="{% static "img/quarkslab.png" %}" alt="Quarkslab"/>
+                    <p>Audited</p>
+                </div><!--
+                --><div class="col-md-4">
+                    <img src="{% static "img/ens.png" %}" alt="ENS"/>
+                    <p>Advised</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#what', 800);
+        });
+
+        $('#newsletter-form').submit(function( event ) {
+            event.preventDefault();
+        });
+    </script>
+{% endblock %}

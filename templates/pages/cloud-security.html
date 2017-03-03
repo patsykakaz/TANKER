@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div id="cloud-security">
+    <div id="cloud-security-header">
+        <div class="header-content">
+            <h1>
+                Security
+            </h1>
+            <h3>
+                The highest standard of data encryption
+            </h3>
+            <div class="button-container">
+                <a class="button" href="#" id="learn-more">
+                    Learn more
+                    <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cloud-security-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 left">
+                    <h3>
+                        Best-in-class security
+                    </h3>
+                </div><!--
+                --><div class="col-md-8 right">
+                    <h2>
+                        Focus on your business, your data is yours
+                    </h2>
+                    <p>
+                        Focus on your business, your data is yours. Existing cloud such as Dropbox and Microsoft One Drive are today’s ultimate tools for collaboration and synchronization.
+                    </p>
+                    <p>
+                        Because Tanker focuses on encryption only, it simply plugs into your current favorite cloud solution and adds that missing security feature you need to secure your business data:
+                        <ul>
+                            <li>Full end-to-end encryption (Elliptic Curve - secp256r1)</li>
+                            <li>Digital signatures (ECDSA)</li>
+                            <li>Automatic key sharing</li>
+                            <li>Company master key for resilience</li>
+                            <li>Administrator user management console with a security perspective</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cloud-security-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 left">
+                    <h3>
+                        Smart end-to-end encryption
+                    </h3>
+                </div><!--
+                --><div class="col-md-8 right">
+                    <h2>
+                        Works in harmony with the best cloud solutions
+                    </h2>
+                    <p>
+                        Your favorite cloud provider uses a large set of "tricks" to make your life easier: partial synchronization, LAN Sync, fast synchronization algorithms, Share...
+                    </p>
+                    <p>
+                        Applying dummy encryption would breakdown all these features and at the same time destroy your productivity. To avoid this, Tanker uses its exclusive Forrest encryption format and network drive emulation:
+                        <ul>
+                            <li>Use AES256-GCM chunk encryption for partial updates and reads</li>
+                            <li>Use ChaCha20 for local cache on large files and fast diff computations</li>
+                            <li>Use network for fast key transfers among users</li>
+                            <li>Use Merkle trees for fast file integrity checks and signatures</li>
+                            <li>Emulate a WebDAV server for transparent file operations and full compatibility with your day-to-day tools</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cloud-security-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        Seamless key management
+                    </h3>
+                </div><!--
+                --><div class="col-md-8">
+                    <h2>
+                        Own your encryption key = own your data
+                    </h2>
+                    <p>
+                        Tanker is a zero-knowledge solution providing you with complete encryption: only you have the keys to unlock your files.
+                        <br/>
+                        Each employee has its own local private key, never transmitted on the internet
+                        <br/>
+                        Your company has a master encryption and signature key to recover lost accounts. 
+                        <br/>
+                        Document keys are never sent in clear form.
+                        <br/>
+                        Tanker server only hold public keys and relies on TrustChainTM for authenticity.
+                        <br/>
+                        To sum up, the only thing we hold are: encrypted document keys we can’t decrypt and public keys we can’t alter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="cloud-security-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <img src="{% static "img/cloud-security/schema2.png" %}" alt="Trustchain™"/>
+                </div><!--
+                --><!--<div class="col-md-6 right">
+                    <h3>
+                        Trustchain™
+                    </h3>
+                    <h2>
+                        Innovative trust network of public keys
+                    </h2>
+                    <p>
+                        Tanker is in charge of managing users identities and distributing public keys. Because tempering with identities and keys coould be dangerous, Tanker uses the innovative TrustChain™ technology to:
+                        <ul>
+                            <li>Make all operations on profiles public</li>
+                            <li>Make all alterations of public keys impossible</li>
+                            <li>Lake all legit updates on public keys verifiable</li>
+                            <li>Allow independant verification of identities and keys through our Open-Source "TrustChain™ checker" module</li>
+                        </ul>
+                    </p>
+                    <p>
+                        The TrustChain™ technology allows us to go beyond TOFU (Trust On First Use) and make sure all your Tanker client instances uses the proper keys for encryption. No one can alter them, your trust will never be broken.
+                    </p>
+                    <div class="button-container">
+                        <a class="button" href="/demo">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="cloud-security-5" class="background-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        Open design & open source based 
+                    </h3>
+                </div><!--
+                --><div class="col-md-8">
+                    <h2>
+                        The more you know, the more you trust
+                    </h2>
+                    <p>
+                        Not everyone is an expert in cyber security and cryptography. Some of you will simply trust us, others will want to know more. 
+                        Because security with Tanker is invisible, using Tanker will give you no clue on "how it works".
+                        Tanker uses the Open-Source (simplified-BSD) cryptographic library Botan for all its low level operations. 
+                    </p>
+                    <p>
+                        If you want to go deeper into Tanker and understand how everything works just <a href="/demo">request a demo</a> and we will get in touch with you.
+                    </p>
+                    <p>
+                        This documentation is regularly updated: if you think an important point is missing, just ask! 
+                    </p>
+                    <!-- <div class="button-container">
+                        <a class="button" href="#">
+                            Learn more about our security book
+                        </a>
+                        <a class="button" href="http://www.ssi.gouv.fr">
+                            Learn more about ANSSI
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}
+
+{% block footer_js %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#learn-more').click(function(e) {
+            e.preventDefault();
+            $(window).scrollTo('#cloud-security-1', 800);
+        });
+    </script>
+{% endblock %}
