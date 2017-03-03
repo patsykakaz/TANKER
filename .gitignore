@@ -3,7 +3,14 @@
 *.db
 .DS_Store
 .coverage
+lib
+bin
+deploy
+include
+local
+share
 migrations
+static.tar
 local_settings.py
 static/scss/*.css
 static/scss/*.css.map
