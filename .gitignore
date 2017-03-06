@@ -18,6 +18,7 @@ local_settings.py
 !/static/img
 !/static/fonts
 !/static/scss/
+!/static/CACHE/
 /static/scss/.sass-cache
 static/scss/*.css
 static/scss/*.css.map
