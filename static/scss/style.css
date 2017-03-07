@@ -769,11 +769,11 @@ body {
     background-attachment: fixed; }
     @media only screen and (max-width: 768px) {
       #demo #demo-header {
-        min-height: 450px; } }
+        /*min-height: 450px;*/ } }
     #demo #demo-header .header-content {
-      padding: 13% 0 8% 0;
+      /*padding: 13% 0 8% 0;*/
       position: relative;
-      top: 40%;
+      top: 30%;
       left: 50%;
       -o-transform: translate(-50%, 0);
       -moz-transform: translate(-50%, 0);
@@ -781,13 +781,14 @@ body {
       -ms-transform: translate(-50%, 0);
       -khtml-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
-      text-align: center; }
-      @media only screen and (max-width: 992px) {
-        #demo #demo-header .header-content {
-          padding-top: 14%; } }
+      text-align: center;
+      width: 90%; }
       @media only screen and (max-width: 768px) {
         #demo #demo-header .header-content {
-          top: 70px;
+          top: 100px; } }
+      @media only screen and (max-width: 768px) {
+        #demo #demo-header .header-content {
+          top: 100px;
           left: 0;
           position: relative;
           width: 100%;
@@ -800,21 +801,8 @@ body {
           padding-left: 10%;
           padding-right: 10%; } }
       #demo #demo-header .header-content h1 {
-        font-size: 33px;
-        color: #ffffff;
-        font-weight: 600;
-        padding-bottom: 0;
-        text-align: center;
-        padding-left: 0;
-        margin: 0;
-        font-weight: 300;
-        text-transform: uppercase;
-        padding-right: 0;
-        margin: 0;
-        line-height: 55px;
-        padding-top: 2%; }
+        color: #ffffff; }
       #demo #demo-header .header-content h3 {
-        font-size: 18px;
         color: #ffffff; }
       #demo #demo-header .header-content p {
         color: #ffffff;
@@ -854,8 +842,12 @@ body {
       position: relative; }
     #demo #contact #social img {
       width: 30px; }
-    #demo #contact #social a:after {
-      content: none; }
+    #demo #contact #social a {
+      margin: 0 10px 0 0; }
+      #demo #contact #social a:after {
+        content: none; }
+      #demo #contact #social a i.fa-lg {
+        font-size: 20px; }
 
 #user-first #user-header {
   background-image: url(../../static/img/user-first/header.png);

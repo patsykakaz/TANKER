@@ -6,7 +6,7 @@
 
 {% block main %}
 <div id="demo">
-    <div id="demo-header">
+    <div class='custom_header' id="demo-header">
         <div class="header-content">
             <h1>
                 Contact
@@ -26,12 +26,12 @@
 
     <div class="container" id="contact">
         <div class="row">
-            <div class="col-md-4">
-                <h3>General inquiries</h3>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h2>General inquiries</h2>
                 <p><a href="mailto:contact@tanker.io">contact@tanker.io</a></p>
             </div>
-            <div class="col-md-4">
-                <h3>Office</h3>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h2>Office</h2>
                 <p>
                     71 rue du Faubourg Saint Martin<br/>
                     75010 Paris, France
@@ -41,13 +41,23 @@
                 </p>
                 
             </div>
-            <div class="col-md-4" id="social">
-                <h3>Social</h3>
+            <div class="col-md-4 col-sm-4 col-xs-12" id="social">
+                <h2>Social</h2>
                 <p>
                     <!-- <a href="#"><img src="{% static "img/demo/facebook.png" %}" alt="Facebook"/></a> -->
-                    <a href="https://www.linkedin.com/company/tankerapp"><img src="{% static "img/demo/linkedin.png" %}" alt="Linkedin"/></a>
+                    <a href="https://www.linkedin.com/company/tankerapp" target='blank'>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a href="https://twitter.com/Tanker_Security" target='blank'>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
                 </p>
-                
             </div>
         </div>
     </div>
@@ -84,3 +94,4 @@
         });
     </script>
 {% endblock %}
+

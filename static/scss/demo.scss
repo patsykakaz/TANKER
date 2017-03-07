@@ -9,23 +9,24 @@
         background-attachment: fixed;
 
         @media #{$mobile} {
-            min-height: 450px;
+            /*min-height: 450px;*/
         }
 
         .header-content {
-            padding: 13% 0 8% 0;
+            /*padding: 13% 0 8% 0;*/
             position: relative;
-            top: 40%;
+            top: 30%;
             left: 50%;
             @include prefix(transform, translate(-50%, 0));
             text-align: center;
+            width: 90%;
 
-            @media #{$tablet} {
-                padding-top: 14%;
+            @media #{$mobile} {
+                top: 100px;
             }
 
             @media #{$mobile} {
-                top: 70px;
+                top: 100px;
                 left: 0;
                 position: relative;
                 width: 100%;
@@ -35,23 +36,10 @@
             }
 
             h1 {
-                font-size: 33px;
                 color: $white;
-                font-weight: 600;
-                padding-bottom: 0;
-                text-align: center;
-                padding-left: 0;
-                margin: 0;
-                font-weight: 300;
-                text-transform: uppercase;
-                padding-right: 0;
-                margin: 0;
-                line-height: 55px;
-                padding-top: 2%;
             }
 
             h3 {
-                font-size: 18px;
                 color: $white;
             }
 
@@ -110,10 +98,15 @@
             }
 
             a {
+                margin: 0 10px 0 0;
                 &:after {
                     content: none;
+                }
+                i.fa-lg{
+                    font-size: 20px;
                 }
             }
         }
     }
 }
+
