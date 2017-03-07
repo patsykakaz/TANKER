@@ -7,11 +7,40 @@
 {% block extra_head %}
     {{ block.super }}
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<style type="text/css">
+    .col-md-8{
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    .overlay .content{
+        max-width: 500px;
+        padding: 20px 40px;
+        margin: auto;
+        background-color: #FFFFFF;
+    }
+    #about-us #committee .card .link-container{
+        position: relative;
+        bottom: -180px;
+        -moz-transition: all .2s ease-out;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+    #about-us #committee .card:hover .link-container{
+        bottom: -20px;
+    }
+    @media and (max-width: 990px){
+        .col-md-8{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block main %}
 <div id="about-us">
-    <div id="about-us-header">
+    <div class='custom_header' id="about-us-header">
         <div class="header-content">
             <h1>
                 About us
@@ -116,7 +145,7 @@
             </div>
             <div class="row" id="committee">
                 <div class="col-md-1"></div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3 col-xs-6">
                     <div class="card">
                         <h1>Rémi Géraud</h1>
                         <div class="link-container">
@@ -124,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3 col-xs-6">
                     <div class="card" id="houda-ferradi">
                         <h1>Houda Ferradi</h1>
                         <div class="link-container">
@@ -132,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3 col-xs-6">
                     <div class="card" id="philippe-baumard">
                         <h1>Philippe Baumard</h1>
                         <div class="link-container">
@@ -140,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3 col-xs-6">
                     <div class="card" id="david-naccache">
                         <h1>David Naccache</h1>
                         <div class="link-container">
@@ -148,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3 col-xs-6">
                     <div class="card" id="nadim-kobeissi">
                         <h1>Nadim Kobeissi</h1>
                         <div class="link-container">
@@ -161,53 +190,80 @@
     </div>
 
     <div class="overlay" id="bio-houda-ferradi">
-        <div class="close"></div>
+        {# <div class="close"></div> #}
         <div class="content">
-            <h1>Houda Ferradi</h1>
+            <h1>
+                Houda Ferradi
+                <div class="close"></div>
+            </h1>
             <p>
             Houda Ferradi received a Doctorate in Cryptograpy and Computer Security from the Ecole normale supérieure's Computer Science Department. Lecturer at Panthéon-Assas University, Paris 13 University and Ecole normale superieure, she has a substantial industrial and consulting experience in security. Her research interests mainly include Privacy and Integrity in the Cloud as well as cryptographic hardware and embedded systems. 
             </p>
-            <p>
-            Statement : We are pleased to share our cryptographic skills with the Tanker team to enable them to reconcile in a pragmatic way security and simplicity, academic knowledge and everyday product.
+            <p style='font-style:italic; color: #263B77; font-weight:300;'>
+            "We are pleased to share our cryptographic skills with the Tanker team to enable them to reconcile in a pragmatic way security and simplicity, academic knowledge and everyday product."
             </p>
         </div>
     </div>
 
     <div class="overlay" id="bio-philippe-baumard">
-        <div class="close"></div>
+        {# <div class="close"></div> #}
         <div class="content">
-            <h1>Philippe Baumard</h1>
+            <h1>
+                Philippe Baumard
+                <div class="close"></div>
+            </h1>
             <p>
             Philippe Baumard is Professor and co-Director of the Master Degree in Criminal Sciences at the Cnam, Dean of Research of Eslsca Business School, School of Economic Warfare and Professor, Associate Researcher, with Ecole Polytechnique. Dr. Baumard pioneered works on information and cyber-warfare in the early 1990s, noticeably with his “From Info-War to Knowledge- Warfare, he was elected President of the Scientific Council of the High Council for Strategic Research. 
             </p>
-            <p>
-            Statement :While instant messaging encryption is becoming increasingly widespread, it is a difficult challenge for the Tanker team to seamlessly encrypt from end to end the cloud collaboration solutions which ease of use made them such a success. 
+            <p style='font-style:italic; color: #263B77; font-weight:300;'>
+            "While instant messaging encryption is becoming increasingly widespread, it is a difficult challenge for the Tanker team to seamlessly encrypt from end to end the cloud collaboration solutions which ease of use made them such a success."
             </p>
         </div>
     </div>
 
     <div class="overlay" id="bio-david-naccache">
-        <div class="close"></div>
+        {# <div class="close"></div> #}
         <div class="content">
-            <h1>David Naccache</h1>
+            <h1>
+                David Naccache
+                <div class="close"></div>
+            </h1>
             <p>
             David Naccache heads the ENS' Information Security Group. His research areas are code security, forensics, the automated and the manual detection of vulnerabilities. Before joining ENS Paris (PSL) he was a professor during 10 years at UP2 (Sorbonne Universités). He is a forensic expert with several courts, a member of OSCP and the incumbant of the Law and IT forensics chair at EOGN.
             </p>
+            <p style='font-style:italic; color: #263B77; font-weight:300;'>
+            "Tanker is an innovating French start-up who strives to develop tools allowing users protect their privacy in the cloud. Tanker integrates cutting edge algorithms in a coherent way and offers a very complete range of security products "
+            </p>
+        </div>
+    </div>
+
+    <div class="overlay" id="bio-nadim-kobeissi">
+        <div class="content">
+            <h1>
+                Nadim Kobeissi
+                <div class="close"></div>
+            </h1>
             <p>
-            Statement : Tanker is an innovating French start-up who strives to develop tools allowing users protect their privacy in the cloud. Tanker integrates cutting edge algorithms in a coherent way and offers a very complete range of security products 
+            Nadim Kobeissi is a Ph.D. student at INRIA Paris focusing on applied cryptography and formal verification. He is the founder of Symbolic Software, an applied cryptography software and consulting firm. He is known for authoring the Cryptocat encrypted chat software.
+            </p>
+            <p style='font-style:italic; color: #263B77; font-weight:300;'>
+            « Allowing teams to quickly enforce security guarantees on their cloud file accounts is important, and I’m encouraged by the approach Tanker is taking to this problem. »
             </p>
         </div>
     </div>
 
     <div class="overlay" id="bio-remi-geraud">
-        <div class="close"></div>
+        {# <div class="close"></div> #}
         <div class="content">
-            <h1>Rémi Géraud</h1>
+            <h1>
+                Rémi Géraud
+                <div class="close"></div>
+            </h1>
             <p>
             Rémi Géraud is a researcher and expert in cryptology and security, he is also a member of the Ecole Normale Supérieure’s Information Security Lab. He is responsible for the Information Security course, for 3rd years, at the École Centrale de Paris (now called Centrale Supélec) since 2014-2015.  
             </p>
-            <p>
-            Statement : What makes this project stand out from others is further than the necessary protection of data, Tanker aims to integrate in a transparent manner new and original security solutions. This alliance between innovation, flexibility and security is a unique and necessary asset.
+            <p style='font-style:italic; color: #263B77; font-weight:300;'>
+            "What makes this project stand out from others is further than the necessary protection of data, Tanker aims to integrate in a transparent manner new and original security solutions. This alliance between innovation, flexibility and security is a unique and necessary asset."
             </p>
         </div>
     </div>
@@ -245,11 +301,18 @@
 
         $('#link-nadim-kobeissi').click(function(e) {
             e.preventDefault();
+            $('#bio-nadim-kobeissi').slideDown(500);
+        });
+
+        $('.overlay .content').click(function(e) {
+            e.preventDefault();
+            $(this).parent().slideUp(500);
         });
 
         $('.close').click(function(e) {
             e.preventDefault();
-            $(this).parent().slideUp(500);
+            $(this).parent().parent().parent().slideUp(500);
         });
     </script>
 {% endblock %}
+
