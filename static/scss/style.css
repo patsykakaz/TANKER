@@ -1323,6 +1323,8 @@ body {
 #cloud-security #cloud-security-1 .col-md-4 h3 {
   font-size: 30px;
   font-weight: 600; }
+#cloud-security #cloud-security-1 li {
+  font-weight: 500; }
 #cloud-security #cloud-security-2 {
   background-color: #263B77;
   color: #ffffff; }
