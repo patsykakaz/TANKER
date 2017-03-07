@@ -174,83 +174,6 @@ body {
     @media only screen and (max-width: 768px) {
       body .custom_header h3 {
         font-size: 16px; } }
-  body #job-offers {
-    padding-bottom: 7%; }
-    body #job-offers h2 {
-      margin-top: 0;
-      text-align: center;
-      padding: 0 5% 7% 5%; }
-    body #job-offers .job-items {
-      text-align: center;
-      width: 75%;
-      left: 12.5%;
-      position: relative;
-      border: 1px solid #333;
-      background-color: #ffffff;
-      border-radius: 16px;
-      margin-top: 30px;
-      padding: 2% 4%; }
-      body #job-offers .job-items .job-item {
-        border-bottom: 1px solid #C9C9C9; }
-        body #job-offers .job-items .job-item:last-of-type {
-          border-bottom: none; }
-      body #job-offers .job-items:first-of-type {
-        margin-top: 0; }
-      body #job-offers .job-items .job-question {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-        font-weight: 700; }
-        body #job-offers .job-items .job-question p {
-          text-align: justify;
-          margin-bottom: 0;
-          font-weight: 700;
-          color: #333; }
-          @media only screen and (max-width: 768px) {
-            body #job-offers .job-items .job-question p {
-              padding-top: 15px;
-              padding-bottom: 15px; } }
-        body #job-offers .job-items .job-question .row {
-          padding: 20px;
-          margin: 0; }
-        body #job-offers .job-items .job-question .col-md-10 {
-          padding-left: 30px;
-          font-weight: 600; }
-        body #job-offers .job-items .job-question .col-md-2, body #job-offers .job-items .job-question .col-md-10 {
-          display: inline-block;
-          vertical-align: middle;
-          float: none; }
-          body #job-offers .job-items .job-question .col-md-2 img, body #job-offers .job-items .job-question .col-md-10 img {
-            width: 50%; }
-          body #job-offers .job-items .job-question .col-md-2 .job-button, body #job-offers .job-items .job-question .col-md-10 .job-button {
-            background: transparent;
-            border: 1px solid #777777;
-            color: #777777;
-            box-shadow: none; }
-            body #job-offers .job-items .job-question .col-md-2 .job-button:hover, body #job-offers .job-items .job-question .col-md-10 .job-button:hover {
-              background-color: #777777;
-              color: #ffffff; }
-            body #job-offers .job-items .job-question .col-md-2 .job-button.read, body #job-offers .job-items .job-question .col-md-10 .job-button.read {
-              border-color: #263B77;
-              color: #263B77; }
-              body #job-offers .job-items .job-question .col-md-2 .job-button.read:hover, body #job-offers .job-items .job-question .col-md-10 .job-button.read:hover {
-                background-color: #263B77;
-                color: #ffffff; }
-      body #job-offers .job-items .job-answer {
-        border-top: 1px solid #F0F9FC;
-        padding-bottom: 3%; }
-        body #job-offers .job-items .job-answer.none {
-          display: none; }
-        body #job-offers .job-items .job-answer p {
-          padding: 20px 50px;
-          text-align: justify;
-          margin-bottom: 0; }
-          @media only screen and (max-width: 768px) {
-            body #job-offers .job-items .job-answer p {
-              padding-bottom: 30px;
-              padding-left: 10px;
-              padding-right: 10px; } }
-        body #job-offers .job-items .job-answer a {
-          word-break: break-word; }
   body .circle {
     height: 70px;
     width: 70px;
@@ -478,7 +401,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 7%;
+  padding-top: 6%;
   position: relative;
   overflow: visible; }
   @media only screen and (max-width: 768px) {
@@ -1484,9 +1407,12 @@ body {
       #about-us #about-us-header .header-content .button-container .button:hover img {
         top: 3px; }
 #about-us .container {
-  padding: 40px 0 60px 0; }
+  padding: 40px 45px 60px 45px; }
   #about-us .container .row {
     margin: 0; }
+    #about-us .container .row .col-md-8 {
+      padding-left: 0;
+      padding-right: 0; }
     #about-us .container .row .col-md-6, #about-us .container .row .col-md-8, #about-us .container .row .col-md-4 {
       display: inline-block;
       vertical-align: top;
@@ -1496,7 +1422,7 @@ body {
         width: 75%; }
       #about-us .container .row .col-md-6 h1, #about-us .container .row .col-md-6 h2, #about-us .container .row .col-md-8 h1, #about-us .container .row .col-md-8 h2, #about-us .container .row .col-md-4 h1, #about-us .container .row .col-md-4 h2 {
         text-align: center;
-        margin-top: 10px; }
+        margin-top: 20px; }
     @media only screen and (max-width: 992px) {
       #about-us .container .row .col-md-4 {
         width: 100%; }
@@ -1523,8 +1449,12 @@ body {
   color: #ffffff; }
   #about-us #about-us-2 h2, #about-us #about-us-2 p {
     color: #ffffff; }
+  #about-us #about-us-2 .container {
+    padding: 40px 45px 60px 45px; }
 #about-us #about-us-3 {
   background-color: #F5F5F5; }
+  #about-us #about-us-3 .container {
+    padding: 40px 45px 60px 45px; }
 #about-us #committee {
   padding-top: 5%;
   padding-bottom: 5%; }
@@ -1654,7 +1584,7 @@ body {
     #jobs #jobs-header {
       min-height: 400px; } }
   #jobs #jobs-header .header-content {
-    padding: 9% 0 5% 0;
+    /*padding: 9% 0 5% 0;*/
     position: relative;
     top: 30%;
     left: 50%;
@@ -1666,10 +1596,10 @@ body {
     transform: translate(-50%, 0);
     color: #ffffff;
     text-align: center;
-    width: 65%; }
+    width: 90%; }
     @media only screen and (max-width: 768px) {
       #jobs #jobs-header .header-content {
-        top: 70px;
+        top: 100px;
         left: 0;
         position: relative;
         width: 100%;
@@ -1682,16 +1612,8 @@ body {
         padding-left: 10%;
         padding-right: 10%; } }
     #jobs #jobs-header .header-content h1 {
-      font-size: 33px;
-      margin: 0;
-      line-height: 55px;
-      padding-top: 2%;
-      text-transform: uppercase;
-      font-weight: 300;
-      padding-bottom: 0;
       color: #ffffff; }
     #jobs #jobs-header .header-content h3 {
-      font-size: 18px;
       color: #ffffff; }
     #jobs #jobs-header .header-content .button-container .button {
       -o-box-shadow: none;
@@ -1715,8 +1637,7 @@ body {
       #jobs #jobs-header .header-content .button-container .button:hover img {
         top: 3px; }
 #jobs .container .row {
-  margin: 0;
-  padding-top: 3%; }
+  margin: 0; }
   #jobs .container .row h1 {
     color: #263B77;
     text-align: left;
@@ -1749,17 +1670,25 @@ body {
   #jobs .container .row .col-md-12 {
     text-align: center; }
 #jobs #team {
-  padding-bottom: 5%; }
+  /*padding-bottom: 5%;*/ }
   #jobs #team h1 {
     text-align: center; }
+  #jobs #team .container {
+    padding: 40px 45px 60px 45px; }
+    #jobs #team .container .col-md-8 {
+      padding-right: 0;
+      padding-left: 0; }
+      #jobs #team .container .col-md-8 p {
+        text-align: justify; }
 #jobs #how-we-work {
-  padding-bottom: 7%; }
+  padding: 40px 45px 80px 45px;
+  background-color: #F5F5F5; }
   #jobs #how-we-work .row {
     padding-top: 0; }
   #jobs #how-we-work .col-md-3 {
     padding-right: 7%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0;
     vertical-align: bottom; }
     #jobs #how-we-work .col-md-3 p {
       margin-top: 20px;
@@ -1769,7 +1698,7 @@ body {
       font-weight: 400;
       text-align: center; }
     #jobs #how-we-work .col-md-3 img {
-      width: 25%; }
+      width: 50%; }
       @media only screen and (max-width: 992px) {
         #jobs #how-we-work .col-md-3 img {
           max-width: 200px; } }
@@ -1781,15 +1710,18 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-bottom: 5%; }
-  #jobs #hack-challenge h1, #jobs #hack-challenge p {
+  padding: 60px 0; }
+  #jobs #hack-challenge h2 {
+    color: #ffffff;
+    padding-bottom: 40px; }
+  #jobs #hack-challenge p {
     text-align: left;
     color: #ffffff; }
-  #jobs #hack-challenge p {
-    text-align: left; }
   #jobs #hack-challenge img {
     width: 100%;
     margin-bottom: 20px; }
+  #jobs #hack-challenge .container {
+    padding: 40px 45px; }
   #jobs #hack-challenge .col-md-6 {
     vertical-align: top;
     padding-left: 0;
@@ -1808,43 +1740,137 @@ body {
       background-color: #ffffff;
       color: #263B77; }
 #jobs #job-offers {
+  padding: 40px 0 60px 0;
   background-color: #ffffff; }
+  #jobs #job-offers h2 {
+    margin: 20px 0 10px 0;
+    padding-bottom: 25px;
+    text-align: center; }
+  #jobs #job-offers .job-items {
+    text-align: center;
+    width: 75%;
+    left: 12.5%;
+    position: relative;
+    border: 1px solid #C9C9C9;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-top: 30px;
+    padding: 2% 4%; }
+    #jobs #job-offers .job-items .job-item {
+      border-bottom: 1px solid #C9C9C9; }
+      #jobs #job-offers .job-items .job-item:last-of-type {
+        border-bottom: none; }
+    #jobs #job-offers .job-items:first-of-type {
+      margin-top: 0; }
+    #jobs #job-offers .job-items .job-question {
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      font-weight: 700; }
+      #jobs #job-offers .job-items .job-question h4 {
+        text-align: left;
+        font-weight: 600;
+        color: #333; }
+      #jobs #job-offers .job-items .job-question h5 {
+        text-align: left;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.4); }
+      #jobs #job-offers .job-items .job-question p {
+        text-align: justify;
+        margin-bottom: 0;
+        font-weight: 700;
+        color: #333; }
+        @media only screen and (max-width: 768px) {
+          #jobs #job-offers .job-items .job-question p {
+            padding-top: 15px;
+            padding-bottom: 15px; } }
+      #jobs #job-offers .job-items .job-question .row {
+        padding: 20px;
+        margin: 0; }
+      #jobs #job-offers .job-items .job-question .col-md-10 {
+        padding-left: 30px;
+        font-weight: 600; }
+      #jobs #job-offers .job-items .job-question .col-md-2, #jobs #job-offers .job-items .job-question .col-md-10 {
+        display: inline-block;
+        vertical-align: middle;
+        float: none; }
+        #jobs #job-offers .job-items .job-question .col-md-2 img, #jobs #job-offers .job-items .job-question .col-md-10 img {
+          width: 50%; }
+        #jobs #job-offers .job-items .job-question .col-md-2 .job-button, #jobs #job-offers .job-items .job-question .col-md-10 .job-button {
+          background: transparent;
+          border: 1px solid #777777;
+          color: #777777;
+          box-shadow: none; }
+          #jobs #job-offers .job-items .job-question .col-md-2 .job-button:hover, #jobs #job-offers .job-items .job-question .col-md-10 .job-button:hover {
+            background-color: #777777;
+            color: #ffffff; }
+          #jobs #job-offers .job-items .job-question .col-md-2 .job-button.read, #jobs #job-offers .job-items .job-question .col-md-10 .job-button.read {
+            border-color: #263B77;
+            color: #263B77; }
+            #jobs #job-offers .job-items .job-question .col-md-2 .job-button.read:hover, #jobs #job-offers .job-items .job-question .col-md-10 .job-button.read:hover {
+              background-color: #263B77;
+              color: #ffffff; }
+    #jobs #job-offers .job-items .job-answer b, #jobs #job-offers .job-items .job-answer strong {
+      color: #263B77; }
+    #jobs #job-offers .job-items .job-answer {
+      border-top: 1px solid #F0F9FC;
+      padding-bottom: 3%; }
+      #jobs #job-offers .job-items .job-answer.none {
+        display: none; }
+      #jobs #job-offers .job-items .job-answer p {
+        padding: 20px 50px;
+        text-align: justify;
+        margin-bottom: 0; }
+        @media only screen and (max-width: 768px) {
+          #jobs #job-offers .job-items .job-answer p {
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px; } }
+      #jobs #job-offers .job-items .job-answer a {
+        word-break: break-word; }
 #jobs #contact-us {
+  padding: 40px 0 60px 0;
   text-align: center; }
   #jobs #contact-us h1, #jobs #contact-us p {
     color: #333;
     text-align: center; }
+  #jobs #contact-us h2 {
+    margin: 20px 0 10px 0;
+    padding-bottom: 25px; }
 
 #legal {
-  background-color: #263B77;
+  background-color: #ffffff;
   color: #ffffff;
   margin: 0;
   width: 100%;
   padding: 110px 10%; }
+  #legal h1 {
+    margin-bottom: 50px; }
   #legal h1, #legal p, #legal a {
-    color: #ffffff; }
+    color: #333; }
   #legal a:hover:after {
-    border-color: #ffffff; }
+    border-color: #263B77; }
   #legal h2 {
     text-transform: none;
     font-weight: 700;
-    color: #ffffff; }
+    color: #333; }
 
 #terms {
-  background-color: #263B77;
+  background-color: #ffffff;
   margin: 0;
   color: #ffffff;
   width: 100%;
   padding: 110px 10%; }
+  #terms h1 {
+    margin-bottom: 50px; }
   #terms h1, #terms p, #terms a {
-    color: #ffffff; }
+    color: #333; }
   #terms a:hover:after {
-    border-color: #ffffff; }
+    border-color: #263B77; }
   #terms li {
     list-style-type: none; }
     #terms li h2 {
       text-transform: none;
-      color: #ffffff; }
+      color: #333; }
 
 #support {
   background-color: #ffffff;
@@ -2095,7 +2121,7 @@ body {
         #press #press-header .header-content .button-container .button:hover img {
           top: 3px; }
 #press #press-releases, #press #press-publications {
-  padding: 5% 0; }
+  padding: 40px 0 60px 0; }
   #press #press-releases h3, #press #press-publications h3 {
     text-align: center;
     margin-top: 0;
@@ -2106,21 +2132,24 @@ body {
       text-align: left; }
     #press #press-releases .col-md-4 h3, #press #press-publications .col-md-4 h3 {
       font-size: 14px;
-      line-height: 25px; }
+      line-height: 25px;
+      font-weight: 600; }
     @media only screen and (max-width: 992px) {
       #press #press-releases .col-md-4 img, #press #press-publications .col-md-4 img {
         width: 50%; } }
   #press #press-releases a, #press #press-publications a {
-    color: #2CBDFF; }
+    color: #2CBDFF;
+    float: right; }
     #press #press-releases a:hover:after, #press #press-publications a:hover:after {
       border-color: #2CBDFF; }
 #press #press-publications {
   background: #F4F4F3; }
   #press #press-publications .col-md-4 h3 {
     padding-top: 20px; }
+  #press #press-publications .col-md-4 img {
+    background-color: #FFFFFF; }
 #press #press-brand-assets {
-  padding: 3% 0;
-  padding-bottom: 7%; }
+  padding: 40px 0 100px 0; }
   #press #press-brand-assets .container {
     overflow: visible; }
   #press #press-brand-assets .download {
@@ -2163,3 +2192,20 @@ body {
   #press #press-brand-assets .button-container {
     text-align: center;
     padding-bottom: 7%; }
+
+#richtextpage {
+  background-color: #ffffff;
+  color: #ffffff;
+  margin: 0;
+  width: 100%;
+  padding: 110px 10%; }
+  #richtextpage h1 {
+    margin-bottom: 50px; }
+  #richtextpage h1, #richtextpage p, #richtextpage a {
+    color: #333; }
+  #richtextpage a:hover:after {
+    border-color: #263B77; }
+  #richtextpage h2 {
+    text-transform: none;
+    font-weight: 700;
+    color: #333; }

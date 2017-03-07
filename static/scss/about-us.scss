@@ -66,11 +66,15 @@
     }
 
     .container {
-        padding: 40px 0 60px 0;
+        padding: 40px 45px 60px 45px;
 
         .row {
             margin: 0;
 
+            .col-md-8{
+                padding-left: 0;
+                padding-right: 0
+            }
             .col-md-6, .col-md-8, .col-md-4 {
                 display: inline-block;
                 vertical-align: top;
@@ -83,7 +87,7 @@
 
                 h1, h2 {
                     text-align: center;
-                    margin-top: 10px;
+                    margin-top: 20px;
                 }
             }
 
@@ -132,10 +136,16 @@
         h2, p {
             color: $white;
         }
+        .container{
+            padding: 40px 45px 60px 45px;
+        }
     }
 
     #about-us-3 {
         background-color: $lightGrey3;
+        .container{
+            padding: 40px 45px 60px 45px;
+        }
     }
 
     #committee {

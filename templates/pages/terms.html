@@ -4,6 +4,15 @@
 {% block meta_title %}{% trans "Tanker" %}{% endblock %}
 {% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
 
+{% block extra_js %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.navbar').addClass('navbar-blue');
+        $('.navbar-brand img').attr('src','{% static "img/tanker-blue.svg" %}');
+    });
+</script>
+{% endblock %}
+
 {% block main %}
     <div class="container" id="terms">
     <h1>Tanker user agreement</h1>
@@ -37,3 +46,4 @@
     </ul>
     </div>
 {% endblock %}
+

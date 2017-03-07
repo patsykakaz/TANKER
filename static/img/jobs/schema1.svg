@@ -1,1 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="66" viewBox="0 0 50 66"><defs><path id="a" d="M0 65.936V.472h49.924v65.464H0z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path fill="#263B77" d="M34.622 34.885l-12.63 11.047a2.12 2.12 0 0 1-3.243-.549l-3.57-6.288A2.121 2.121 0 1 1 18.87 37l2.285 4.025 10.672-9.333a2.12 2.12 0 1 1 2.795 3.194M47.88.471H37.055c-.204 0-.53.185-.53.389v8.647c0 1.707-1.305 3.012-3.012 3.012h-17.1c-1.709 0-3.014-1.305-3.014-3.012V.861c0-.204-.326-.39-.529-.39H2.046C.818.472 0 1.29 0 2.519V63.89c0 1.227.818 2.045 2.046 2.045h45.833c1.227 0 2.045-.818 2.045-2.045V2.518c0-1.228-.818-2.046-2.045-2.046" mask="url(#b)"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400px"
+	 height="400px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Calque_1" display="none">
+	<g display="inline">
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M34.9,34.598c0.447-0.638,1.45-1.161,2.229-1.161
+			h23.428c0.779,0,1.745,0.547,2.146,1.215l5.814,9.692c0.401,0.668,0.357,1.732-0.098,2.365l-18.68,25.982
+			c-0.455,0.633-1.215,0.645-1.689,0.026L28.09,46.683c-0.474-0.619-0.497-1.647-0.05-2.285L34.9,34.598z"/>
+	</g>
+	<g display="inline">
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M61.975,33.437L49.35,72.493
+			c-0.24,0.742-0.634,0.742-0.876,0.002L35.712,33.437"/>
+	</g>
+	<g display="inline">
+		<line fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="27.228" y1="45.559" x2="69.248" y2="45.559"/>
+	</g>
+	<g display="inline">
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M39.673,45.559l7.747-10.964
+			c0.45-0.636,1.219-0.662,1.71-0.056l8.927,11.021"/>
+	</g>
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.874" cy="50.086" r="45.386"/>
+</g>
+<g id="Calque_2">
+	<circle fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.517" cy="49.816" r="45.415"/>
+	
+		<rect x="28.069" y="28.356" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" width="42.453" height="46.09"/>
+	
+		<rect x="34.76" y="35.229" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" width="29.514" height="33.153"/>
+	<path fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M53.453,40.743c0-2.345-1.901-4.246-4.245-4.246
+		c-2.345,0-4.246,1.9-4.246,4.246h-3.728V25.122h16.123v15.622H53.453z"/>
+	<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M40.704,25.475"/>
+	<g>
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M44.975,53.119l3.383,4.021
+			c0.502,0.597,1.329,0.602,1.837,0.011l7.162-8.326"/>
+	</g>
+</g>
+<g id="Calque_3" display="none">
+	<polygon display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="50.609,43.254 
+		30.016,57.321 50.678,70.164 71.2,56.711 	"/>
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.517" cy="49.982" r="45.801"/>
+	<polygon display="inline" fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="51.353,36.487 
+		30.761,50.553 51.423,63.396 71.941,49.942 	"/>
+	<polygon display="inline" fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="50.535,29.799 
+		29.945,43.867 50.609,56.711 71.127,43.254 	"/>
+</g>
+<g id="Calque_4" display="none">
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.618" cy="49.793" r="45.342"/>
+	<path display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M63.878,43.926
+		c0-8.694-7.048-15.742-15.743-15.742c-8.694,0-15.742,7.048-15.742,15.742c0,6.194,3.578,11.549,8.779,14.12v10.705h13.926V58.046
+		C60.299,55.476,63.878,50.12,63.878,43.926z"/>
+	
+		<line display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="41.172" y1="63.906" x2="55.098" y2="63.906"/>
+	<polyline display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="39.355,43.623 
+		43.593,48.467 48.135,43.623 52.676,48.467 56.914,43.623 	"/>
+	
+		<line display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="47.142" y1="72.687" x2="50.744" y2="72.687"/>
+</g>
+</svg>

@@ -1,1 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="65" viewBox="0 0 73 65"><defs><path id="a" d="M.772.164h26.493v20.833H.772V.164z"/><path id="c" d="M.786.164H23.48v20.833H.786V.164z"/></defs><g fill="none" fill-rule="evenodd"><path fill="#263B77" d="M53.239 29.252l-11.59 33.376c-.98 3.135.762 2.493 2.15.74L70.733 29.28c1.105-1.4 2.182-3.24-.89-3.24h-13.05c-1.816.073-2.715.98-3.554 3.211"/><g transform="translate(45 -.164)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path fill="#263B77" d="M1.13 1.846l-.018.006L8.254 20.03c.275.559.654.917 1.567.966h15.986c2.05-.243 1.481-1.631 1.012-2.377L14.774 1.866A4.096 4.096 0 0 0 11.457.164H2.04C.48.164.601.517 1.13 1.846" mask="url(#b)"/></g><path fill="#263B77" d="M25.227 0h-9.402a4.094 4.094 0 0 0-3.316 1.702L.363 18.596c-.444.768-.833 2.009 1.095 2.237h15.987c1.06-.057 1.397-.532 1.696-1.251l7.027-17.888-.032-.012c.529-1.33.65-1.682-.91-1.682M1.187 28.821l27.565 34.884c1.385 1.552 2.917 1.888 1.737-1.474l.01.011-11.408-32.855-.008.004c-.856-2.339-1.756-3.276-3.611-3.35H2.423c-2.746 0-2.177 1.47-1.236 2.78m44.118-2.78H26.96c-2.615.203-2.838 1.578-1.918 4.607l10.535 30.34.001-.009c.244.787.814.923 1.112 0l.013.017 10.36-29.835c1.098-3.388 1.001-4.906-1.758-5.12"/><g transform="translate(24 -.164)"><mask id="d" fill="#fff"><use xlink:href="#c"/></mask><path fill="#263B77" d="M7.658 2.13l.002-.01-6.57 16.724h.003c-.603 1.592-.262 2.057.53 2.152h21.02c.79-.095 1.132-.56.53-2.151l.018-.003-6.598-16.796.014.085C16.11 1.008 16.015.163 15.003.163h-5.74c-1.013 0-1.109.845-1.605 1.967" mask="url(#d)"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="200px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Calque_1">
+	<g>
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M34.9,34.598c0.447-0.638,1.45-1.161,2.229-1.161
+			h23.428c0.779,0,1.745,0.547,2.146,1.215l5.814,9.692c0.401,0.668,0.357,1.732-0.098,2.365l-18.68,25.982
+			c-0.455,0.633-1.215,0.645-1.689,0.026L28.09,46.683c-0.474-0.619-0.497-1.647-0.05-2.285L34.9,34.598z"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M61.975,33.437L49.35,72.493
+			c-0.24,0.742-0.634,0.742-0.876,0.002L35.712,33.437"/>
+	</g>
+	<g>
+		<line fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="27.228" y1="45.559" x2="69.248" y2="45.559"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M39.673,45.559l7.747-10.964
+			c0.45-0.636,1.219-0.662,1.71-0.056l8.927,11.021"/>
+	</g>
+	<circle fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.874" cy="50.086" r="45.386"/>
+</g>
+<g id="Calque_2" display="none">
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.517" cy="49.816" r="45.415"/>
+	
+		<rect x="28.069" y="28.356" display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" width="42.453" height="46.09"/>
+	
+		<rect x="34.76" y="35.229" display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" width="29.514" height="33.153"/>
+	<path display="inline" fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M53.453,40.743
+		c0-2.345-1.901-4.246-4.245-4.246c-2.345,0-4.246,1.9-4.246,4.246h-3.728V25.122h16.123v15.622H53.453z"/>
+	<path display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M40.704,25.475"/>
+	<g display="inline">
+		<path fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M44.975,53.119l3.383,4.021
+			c0.502,0.597,1.329,0.602,1.837,0.011l7.162-8.326"/>
+	</g>
+</g>
+<g id="Calque_3" display="none">
+	<polygon display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="50.609,43.254 
+		30.016,57.321 50.678,70.164 71.2,56.711 	"/>
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.517" cy="49.982" r="45.801"/>
+	<polygon display="inline" fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="51.353,36.487 
+		30.761,50.553 51.423,63.396 71.941,49.942 	"/>
+	<polygon display="inline" fill="#FFFFFF" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="50.535,29.799 
+		29.945,43.867 50.609,56.711 71.127,43.254 	"/>
+</g>
+<g id="Calque_4" display="none">
+	
+		<circle display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" cx="49.618" cy="49.793" r="45.342"/>
+	<path display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" d="M63.878,43.926
+		c0-8.694-7.048-15.742-15.743-15.742c-8.694,0-15.742,7.048-15.742,15.742c0,6.194,3.578,11.549,8.779,14.12v10.705h13.926V58.046
+		C60.299,55.476,63.878,50.12,63.878,43.926z"/>
+	
+		<line display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="41.172" y1="63.906" x2="55.098" y2="63.906"/>
+	<polyline display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" points="39.355,43.623 
+		43.593,48.467 48.135,43.623 52.676,48.467 56.914,43.623 	"/>
+	
+		<line display="inline" fill="none" stroke="#242C56" stroke-width="2" stroke-miterlimit="10" x1="47.142" y1="72.687" x2="50.744" y2="72.687"/>
+</g>
+</svg>

@@ -1,18 +1,21 @@
 #terms {
-    background-color: $blue;
+    background-color: $white;
     margin: 0;
     color: $white;
     width: 100%;
     padding: 110px 10%;
 
-    h1, p, a {
-        color: $white;
+    h1{
+        margin-bottom: 50px;
+    }
+    h1, p, a{
+        color: $black;
     }
 
     a {
         &:hover {
             &:after {
-                border-color: $white;
+                border-color: $blue;
             }
         }
     }
@@ -22,7 +25,8 @@
 
         h2 {
             text-transform: none;
-            color: $white;
+            color: $black;
         }
     }
 }
+

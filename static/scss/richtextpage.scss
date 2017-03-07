@@ -1,0 +1,29 @@
+#richtextpage {
+    background-color: $white;
+    color: $white;
+    margin: 0;
+    width: 100%;
+    padding: 110px 10%;
+
+    h1{
+        margin-bottom: 50px;
+    }
+    h1, p, a{
+        color: $black;
+    }
+
+    a {
+        &:hover {
+            &:after {
+                border-color: $blue;
+            }
+        }
+    }
+
+    h2 {
+        text-transform: none;
+        font-weight: 700;
+        color: $black;
+    }
+}
+

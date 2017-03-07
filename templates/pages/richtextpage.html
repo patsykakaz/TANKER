@@ -1,11 +1,30 @@
-{% extends "pages/page.html" %}
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
 
-{% load mezzanine_tags %}
+{% block meta_title %}{% trans "Tanker" %}{% endblock %}
+{% block meta_description %}{% trans "With Tanker, meet the best of all world to foster the most secure and flexible ... At Tanker we reconcile IT & Security departments with employee's favorite tools..." %}{% endblock %}
 
-{% block main %}{{ block.super }}
-
-{% editable page.richtextpage.content %}
-{{ page.richtextpage.content|richtext_filters|safe }}
-{% endeditable %}
-
+{% block extra_js %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.navbar').addClass('navbar-blue');
+        $('.navbar-brand img').attr('src','{% static "img/tanker-blue.svg" %}');
+    });
+</script>
 {% endblock %}
+
+
+{% block main %}
+{{ block.super }}
+    <div class="container" id="richtextpage">
+        <h1>Tanker Privacy Policy</h1>
+        <div class='row'>
+            <div class='col-md-12'>
+                {% editable page.richtextpage.content %}
+                {{ page.richtextpage.content|richtext_filters|safe }}
+                {% endeditable %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
