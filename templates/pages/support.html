@@ -17,6 +17,14 @@ body h1{
 {% block extra_js %}
     {{ block.super }}
     <script type="text/javascript" src="{% static 'components/jquery-sticky/jquery.sticky.js' %}"></script>
+    <style type="text/css">
+        @media screen and (min-width: 991px) and (max-width: 1200px){
+            #support .faq-menu ul li a{
+                padding: 10px 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
 {% endblock %}
 
 {% block footer_js %}
@@ -82,6 +90,10 @@ body h1{
                         <li>
                             <img src="{% static "img/support/faq8.png" %}" alt=""/>
                             <a href="#title7" class="faq-link">Technical FAQ</a>
+                        </li>
+                        <li>
+                            <img src="{% static "img/phone.png" %}" alt=""/>
+                            <a href="#about-tanker" class="faq-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -451,7 +463,7 @@ body h1{
 
                 <p class="answer">Tanker uses the following algorithms:</p>
 
-                <img src="{% static "img/support/algorithms.png" %}" alt="Tanker algorithms"/>
+                <img style='max-width:600px;' src="{% static "img/support/algorithms.png" %}" alt="Tanker algorithms"/>
 
             </div>
         </div>
@@ -459,18 +471,18 @@ body h1{
 
     <div class="container" id="about-tanker">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
                 <h1>Ask us about Tanker</h1>
                 <p>
                     Need help? Have feedback? Just want to talk about Security?<br/>
                     Don’t hesitate to reach out
                 </p>
             </div><!--
-            --><div class="col-md-3">
+            --><div class="col-md-3 col-sm-6 col-xs-12">
                 <img src="{% static "img/support/form.png" %}" alt="Submit help request"/>
                 <h4>Submit help request</h4>
             </div><!--
-            --><div class="col-md-3">
+            --><div class="col-md-3 col-sm-6 col-xs-12">
                 <img src="{% static "img/support/phone.png" %}" alt="Tanker phone"/>
                 <h4>Tel: +33 (0)1 85 09 21 64</h4>
             </div>
@@ -481,3 +493,4 @@ body h1{
 </div>
 
 {% endblock %}
+

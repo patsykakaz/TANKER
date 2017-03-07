@@ -7,23 +7,23 @@
         background-attachment: fixed;
 
         @media #{$mobile} {
-            min-height: 550px;
+            /*min-height: 550px;*/
         }
 
         .header-content {
-            padding: 8% 0 8% 0;
+            /*padding: 8% 0 8% 0;*/
             position: relative;
-            top: 40%;
+            top: 30%;
             left: 50%;
             @include prefix(transform, translate(-50%, 0));
             text-align: center;
 
             @media #{$tablet} {
-                padding-top: 14%;
+                /*padding-top: 14%;*/
             }
 
             @media #{$mobile} {
-                top: 70px;
+                top: 100px;
                 left: 0;
                 position: relative;
                 width: 100%;
@@ -33,28 +33,23 @@
             }
 
             h1 {
-                font-size: 33px;
-                color: $white;
-                font-weight: 600;
-                padding-bottom: 0;
-                padding-top: 0;
-                text-align: center;
-                padding-left: 0;
                 margin: 0;
+                padding: 30px 0 0 0;
                 font-weight: 300;
+                /*line-height: 60px;*/
+                /*font-size: 55px;*/
                 text-transform: uppercase;
-                padding-right: 0;
-                margin: 0;
-                line-height: 55px;
-                padding-top: 2%;
+                text-align: center;
+                color: $white;
             }
 
             h3 {
-                font-size: 18px;
+                /*font-size: 22px;*/
                 color: $white;
 
                 a {
                     color: $white;
+                    text-decoration: underline;
 
                     &:hover {
                         &:after {
@@ -216,3 +211,4 @@
     }
 
 }
+

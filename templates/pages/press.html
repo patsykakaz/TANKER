@@ -11,21 +11,17 @@
 
 {% block main %}
 <div id="press">
-    <div id="press-header">
+    <div class='custom_header' id="press-header">
         <div class="header-content">
             <h1>
                 PRESS
             </h1>
             <h3>
-                Thanks for your interest in Tanker !
+                Thanks for your interest in Tanker !<br />
+                We're happy to speak with anyone writing about security or cloud data encryption <br />
+                Email us at <a href="mailto:press@tanker.io">press@tanker.io</a>
             </h3>
-            <h3>
-                We're happy to speak with anyone writing about security or cloud data encryption
-            </h3>
-            <h3>
-                Please email us at <a href="mailto:press@tanker.io">press@tanker.io</a>
-            </h3>
-            <div class="button-container">
+            <div class="button-container hide">
                 <a class="button" href="#" id="learn-more">
                     Learn more
                     <img src="{% static "img/arrow.svg" %}" alt="arrow"/>
@@ -128,4 +124,5 @@
         });
     </script>
 {% endblock %}
+
 

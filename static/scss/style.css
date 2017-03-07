@@ -1869,7 +1869,7 @@ body {
         padding-top: 14%; } }
     @media only screen and (max-width: 768px) {
       #support #support-header .header-content {
-        top: 70px;
+        top: 100px;
         left: 0;
         position: relative;
         width: 100%;
@@ -1882,12 +1882,10 @@ body {
         padding-left: 10%;
         padding-right: 10%; } }
     #support #support-header .header-content h1 {
-      font-size: 33px;
-      font-weight: 600;
+      font-size: 55px;
       padding-bottom: 0;
       text-align: center;
       padding-left: 0;
-      margin: 0;
       font-weight: 300;
       padding-right: 0;
       margin: 0;
@@ -1914,12 +1912,14 @@ body {
         #support .faq-menu ul li:last-of-type {
           border-bottom: none; }
         #support .faq-menu ul li img {
-          width: 15px;
-          display: inline-block; }
+          width: 20px;
+          display: inline-block;
+          position: relative;
+          left: 5px; }
         #support .faq-menu ul li a {
           display: inline-block;
           color: #333;
-          padding: 10px 30px;
+          padding: 10px 0px 10px 20px;
           -o-transition: all 0.2s ease;
           -moz-transition: all 0.2s ease;
           -webkit-transition: all 0.2s ease;
@@ -1942,21 +1942,26 @@ body {
     #support #faq-content .title {
       font-size: 30px;
       color: #333;
-      left: -32px;
+      left: -20px;
       position: relative; }
       #support #faq-content .title img {
         width: 35px;
-        display: inline-block;
+        display: none;
         margin-right: 30px; }
       #support #faq-content .title:not(:first-of-type) {
         padding-top: 30px; }
     #support #faq-content .question {
-      padding-top: 25px;
+      margin-bottom: 10px;
+      padding-top: 15px;
       color: #2CBDFF;
       list-style: disc outside none;
-      display: list-item; }
+      display: list-item;
+      text-align: justify; }
     #support #faq-content .answer {
-      font-weight: 300; }
+      margin-bottom: 5px;
+      line-height: 23px;
+      font-weight: 300;
+      text-align: justify; }
   #support .container {
     padding-bottom: 5%; }
   #support #about-tanker {
@@ -1971,8 +1976,23 @@ body {
       color: #777777;
       padding-top: 0;
       margin-top: 10px; }
+      @media only screen and (max-width: 992px) {
+        #support #about-tanker h1 {
+          text-align: center; } }
+      @media only screen and (max-width: 768px) {
+        #support #about-tanker h1 {
+          text-align: center; } }
     #support #about-tanker p {
       text-align: left; }
+      @media only screen and (max-width: 992px) {
+        #support #about-tanker p {
+          text-align: center; } }
+      @media only screen and (max-width: 768px) {
+        #support #about-tanker p {
+          text-align: center; } }
+    @media only screen and (max-width: 768px) {
+      #support #about-tanker .col-md-6 {
+        margin: auto; } }
     #support #about-tanker .col-md-3, #support #about-tanker .col-md-6 {
       float: none;
       display: inline-block;
@@ -1987,9 +2007,10 @@ body {
       #support #about-tanker .col-md-3 img {
         width: 30px;
         display: inline-block;
-        padding-right: 4px; }
+        padding-right: 10px; }
       #support #about-tanker .col-md-3 h4 {
-        display: inline-block; }
+        display: inline-block;
+        font-size: 14px; }
 
 #press #press-header {
   background-image: url(../../static/img/press/header.jpg);
@@ -1999,11 +2020,11 @@ body {
   background-attachment: fixed; }
   @media only screen and (max-width: 768px) {
     #press #press-header {
-      min-height: 550px; } }
+      /*min-height: 550px;*/ } }
   #press #press-header .header-content {
-    padding: 8% 0 8% 0;
+    /*padding: 8% 0 8% 0;*/
     position: relative;
-    top: 40%;
+    top: 30%;
     left: 50%;
     -o-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
@@ -2014,10 +2035,10 @@ body {
     text-align: center; }
     @media only screen and (max-width: 992px) {
       #press #press-header .header-content {
-        padding-top: 14%; } }
+        /*padding-top: 14%;*/ } }
     @media only screen and (max-width: 768px) {
       #press #press-header .header-content {
-        top: 70px;
+        top: 100px;
         left: 0;
         position: relative;
         width: 100%;
@@ -2030,25 +2051,20 @@ body {
         padding-left: 10%;
         padding-right: 10%; } }
     #press #press-header .header-content h1 {
-      font-size: 33px;
-      color: #ffffff;
-      font-weight: 600;
-      padding-bottom: 0;
-      padding-top: 0;
-      text-align: center;
-      padding-left: 0;
       margin: 0;
+      padding: 30px 0 0 0;
       font-weight: 300;
+      /*line-height: 60px;*/
+      /*font-size: 55px;*/
       text-transform: uppercase;
-      padding-right: 0;
-      margin: 0;
-      line-height: 55px;
-      padding-top: 2%; }
+      text-align: center;
+      color: #ffffff; }
     #press #press-header .header-content h3 {
-      font-size: 18px;
+      /*font-size: 22px;*/
       color: #ffffff; }
       #press #press-header .header-content h3 a {
-        color: #ffffff; }
+        color: #ffffff;
+        text-decoration: underline; }
         #press #press-header .header-content h3 a:hover:after {
           border-color: #ffffff; }
     #press #press-header .header-content p {
