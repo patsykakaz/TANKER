@@ -4,13 +4,14 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        /*height: 630px;*/
 
         @media #{$mobile} {
-            min-height: 400px;
+            /*min-height: 400px;*/
         }
 
         .header-content {
-            padding: 13% 0 8% 0;
+            /*padding: 13% 0 8% 0;*/
             position: relative;
             top: 30%;
             left: 50%;
@@ -20,26 +21,19 @@
             min-width: 80%;
 
             @media #{$mobile} {
-                top: 70px;
+                top: 100px;
             }
 
             @media #{$tablet} {
-                padding-top: 14%;
+                /*padding-top: 14%;*/
             }
 
             h1 {
-                margin: 0;
-                font-size: 33px;
-                line-height: 55px;
-                padding-top: 2%;
-                text-transform: uppercase;
-                font-weight: 300;
-                padding-bottom: 0;
                 color: $white;
             }
 
             h3 {
-                font-size: 18px;
+                /*font-size: 18px;*/
                 color: $white;
             }
 
@@ -67,11 +61,8 @@
     }
 
     .container {
-        padding-top: 5%;
-        padding-bottom: 5%;
         margin: 0;
-        padding-left: 7%;
-        padding-right: 7%;
+        padding: 60px 7%;
 
         .row {
             margin: 0;
@@ -149,12 +140,46 @@
         }
     }
 
+
+    #cloud-security-1{
+        .col-md-4{
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+
     #cloud-security-2 {
         background-color: $blue;
         color: $white;
 
-        h3, p {
+        .col-md-4{
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                color: $white;
+            }
+        }
+        p{
             color: $white;
         }
     }
+    #cloud-security-3 {
+        .col-md-4{
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+    #cloud-security-5 {
+        .col-md-4{
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
 }
+

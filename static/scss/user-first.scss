@@ -6,40 +6,32 @@
         background-size: cover;
 
         @media #{$tablet} {
-            padding-top: 10%;
+            /*padding-top: 10%;*/
         }
 
         @media #{$mobile} {
-            min-height: 550px;
+            /*min-height: 550px;*/
         }
 
         .header-content {
-            padding: 13% 0 8% 0;
+            /*padding: 13% 0 8% 0;*/
             position: relative;
             top: 30%;
             left: 50%;
             @include prefix(transform, translate(-50%, 0));
             text-align: center;
-            width: 65%;
+            width: 90%;
 
             @media #{$mobile} {
-                top: 70px;
+                top: 100px;
             }
 
             h1 {
                 color: $blue;
-                margin: 0;
-                font-size: 33px;
-                line-height: 55px;
-                padding-top: 2%;
-                padding-bottom: 2%;
-                text-transform: uppercase;
-                font-weight: 300;
-                padding-bottom: 0;
             }
 
             h3 {
-                font-size: 18px;
+                /*font-size: 18px;*/
             }
 
             .button-container {
@@ -62,6 +54,12 @@
                     }
                 }
             }
+        }
+    }
+    .container {
+        .row {
+            margin: 0;
+            padding: 40px 0 60px 0;
         }
     }
 
@@ -102,10 +100,10 @@
 
         .col-md-6 {
             &.left {
-                padding: 3% 5% 8% 2.5%;
+                /*padding: 0 5% 8% 0;*/
 
                 @media #{$mobile} {
-                    padding: 25px;
+                    padding: 0px;
 
                     .button {
                         font-size: 10px;
@@ -146,7 +144,7 @@
 
     #how-to-install {
         background-color: $lightBlue;
-        padding-bottom: 5%;
+        /*padding-bottom: 0;*/
 
         h3 {
             margin-top: 0;
@@ -175,9 +173,9 @@
 
             img {
                 width: 75%;
-
+                max-width: 300px;
                 @media #{$tablet} {
-                    max-width: 25%;
+                    /*max-width: 25%;*/
                 }
 
                 @media #{$mobile} {
@@ -218,11 +216,15 @@
         background-position: center center;
         background-size: cover;
 
+        h2{
+            margin-top: 0;
+        }
         .container {
-            padding: 5% 10%;
+            padding: 40px 10% 60px 10%;
 
             img {
                 width: 100%;
+                max-width: 700px;
             }
 
             .col-md-6 {
@@ -249,6 +251,7 @@
 
             img {
                 width: 100%;
+                max-width: 700px;
             }
 
             .col-md-6 {
@@ -265,17 +268,25 @@
     }
 
     #faq {
-        padding-bottom: 5%;
+        padding-bottom: 100px;
 
-        h2 {
-            padding-top: 3%;
+        h2{
+            padding-top: 40px;
             text-align: center;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .container{
+            .row{
+                padding: 0;
+            }
         }
 
         .question {
             color: $green;
             font-weight: 600;
-            padding-bottom: 10%;
+            padding-bottom: 40px;
         }
 
         @media #{$tablet} {
@@ -304,3 +315,4 @@
         }
     }
 }
+

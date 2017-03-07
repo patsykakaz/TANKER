@@ -6,41 +6,33 @@
         background-size: cover;
 
         @media #{$mobile} {
-            min-height: 580px;
+            /*min-height: 580px;*/
         }
 
         .header-content {
-            padding: 13% 0 8% 0;
+            /*padding: 13% 0 8% 0;*/
             position: relative;
             top: 30%;
             left: 50%;
             @include prefix(transform, translate(-50%, 0));
             color: $white;
             text-align: center;
-            width: 65%;
+            width: 90%;
 
             @media #{$tablet} {
-                padding-top: 14%;
+                /*padding-top: 14%;*/
             }
 
             @media #{$mobile} {
-                top: 70px;
+                top: 100px;
             }
 
             h1 {
-                margin: 0;
-                font-size: 33px;
-                line-height: 55px;
-                padding-top: 2%;
-                padding-bottom: 2%;
-                text-transform: uppercase;
-                font-weight: 300;
-                padding-bottom: 0;
                 color: $white;
             }
 
             h3 {
-                font-size: 18px;
+                /*font-size: 18px;*/
                 color: $white;
             }
 
@@ -70,8 +62,7 @@
     .container {
         .row {
             margin: 0;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            padding: 40px 0 60px 0;
 
             .col-md-6 {
                 display: inline-block;
@@ -97,7 +88,8 @@
 
                     @media #{$mobile} {
                         text-align: center;
-                        padding-right: 0;
+                        /*padding-left: 15px;*/
+                        /*padding-right: 15px;*/
                     }
                 }
 
@@ -134,12 +126,12 @@
 
     #easy-to-manage-2 {
         .container {
-            padding-left: 3%;
+            /*padding-left: 3%;*/
         }
     }
 
     #cloud-compliance {
-        padding: 3% 28%;
+        padding: 0 28%;
 
         @media #{$mobile} {
             padding-left: 5%;
@@ -147,11 +139,7 @@
         }
 
         p {
-            text-align: left;
-        }
-
-        .row {
-            padding-top: 0;
+            text-align: justify;
         }
 
         h3 {
@@ -168,13 +156,15 @@
     }
 
     #faq {
-        padding-bottom: 3%;
+        padding-bottom: 50px;
 
         h2 {
-            padding-top: 3%;
+            padding-top: 40px;
             text-align: center;
         }
-
+        p{
+            margin-bottom: 0;
+        }
         .row {
             padding-top: 0;
             padding-bottom: 0;
@@ -182,24 +172,16 @@
 
         .question {
             color: $green;
-            padding-bottom: 10%;
+            padding-bottom: 40px;
             font-weight: 600;
-
-            &.one-line {
-                padding-bottom: 17%;
-
-                @media #{$tablet} {
-                    padding-bottom: 10%;
-                }
-            }
         }
 
         @media #{$tablet} {
             .col-md-4 {
-                padding-bottom: 5%;
+                padding-bottom: 2%;
 
                 .question {
-                    padding-bottom: 2%;
+                    padding-bottom: 0;
                 }
             }
         }
@@ -226,3 +208,4 @@
     }
 
 }
+

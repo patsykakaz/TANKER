@@ -7,11 +7,34 @@
 {% block extra_head %}
     {{ block.super }}
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <style type="text/css">
+    @media screen and (min-width: 1200px){
+        #user-first #what .col-md-6.right{
+            padding: 0;
+        }
+    }
+    @media screen and (min-width: 991px){
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 990px){
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: inline-block;
+        }
+    }
+    </style>
 {% endblock %}
 
 {% block main %}
 <div id="user-first">
-    <div id="user-header">
+    <div id="user-header" class='custom_header'>
         <div class="header-content">
             <h1>
                 Our priority: the user
@@ -31,8 +54,8 @@
     <div id="what">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 left">
-                    <h3>An encryption software?</h3>
+                <div class="col-md-6 left middlize">
+                    <h2>An encryption software?</h2>
                     <p>
                         Security solutions should be easy to use and compliment your workflows.
                         Good news: you can now embrace your favorite cloud services at work, Tanker makes sure that all your data stored and exchanged is 100% business compliant.
@@ -45,7 +68,7 @@
                         Others will just see a long, meaningless string of numbers.
                     </p>
                 </div>
-                <div class="col-md-6 right">
+                <div class="col-md-6 right middlize_ref">
                     <img 
                     class="animateme scrollme"
                     data-when="span"
@@ -59,9 +82,11 @@
     </div>
 
     <div id="how-to-install">
-        <h3>Easy setup</h3>
         <div class="container">
             <div class="row">
+                <div class='col-md-12'>
+                    <h2 class='text-center'>Easy setup</h2>
+                </div>
                 <div 
                     class="col-md-4 animateme scrollme"
                     data-when="span"
@@ -99,9 +124,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 left">
-                    <h3>Encrypt as you go</h3>
+                    <h2>Encrypt as you go</h2>
                     <p>
-                        Work and stock your files directly in your Tanker drive.
+                        Work and stock your files directly in your Tanker drive. <br />
                         Tanker works behind the scenes to encrypt your files before they leave your computer.
                     </p>
                 </div><!--
@@ -119,7 +144,7 @@
                     <img src="{% static "img/user-first/schema7.png" %}" alt="Encryption software"/>
                 </div><!--
                 --><div class="col-md-6 right">
-                    <h3>Collaborate securely</h3>
+                    <h2>Collaborate securely</h2>
                     <p>
                         Keep sharing files the same way you did before.<br/>
                         - Seamlessly with your team members<br/>
@@ -139,50 +164,65 @@
     </div>
 
     <div id="faq">
-        <h2>
-            Frequently asked...
-        </h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="question">
-                        Am I supposed to download Dropbox or OneDrive?
-                    </p>
-                    <p class="answer">
-                        Yes, you always need to have Dropbox or OneDrive desktop client setup on your computer. Tanker’s know-how is to provide world-class encryption on your data. We let our cloud partners manage what they are the best at: stock, sync and share.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="question">
-                        What if I forget my PIN code or lose my device?
-                    </p>
-                    <p class="answer">
-                        If you lose your PIN Code, your unique encryption key will be cancelled and you will have to click “Reset PIN Code” to get back access to your data. Your administrator (someone in your IT team) will make sure you can access it back.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="question">
-                        What if the person I want to share a document with does not have Tanker?
-                    </p>
-                    <p class="answer">
-                        Tanker’s infrastructure enables you to share documents inside and outside your company with full end-to-end encryption. <br/>
-                        - If you share a collaborative folder, the recipient will have to setup Tanker on his computer In order to decrypt the documents. As you have experienced, installing Tanker only takes a few seconds so your collaborator will be up and running in not time.<br/>
-                        - If you share a download link, the recipient will not need to setup anything (coming soon)
-                    </p>
-                </div>
-            </div>
+<div class='row'>
+<div class="col-md-12">
+    <h2 class='text-center'>
+        Frequently asked...
+    </h2>
+    <div class='row text-left'>
+        <div class='col-md-4'>
+            <p class="question">
+                Am I supposed to download Dropbox or OneDrive?
+            </p>
         </div>
-
-        <div class="container" id="more-questions">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="button-container">
-                        <a class="button" href="/support">
-                            More questions
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class='col-md-4 mobile'>
+            <p class="answer text-justify">
+                Yes, you always need to have Dropbox or OneDrive desktop client setup on your computer. Tanker’s know-how is to provide world-class encryption on your data. We let our cloud partners manage what they are the best at: stock, sync and share.
+            </p>
+        </div>
+        <div class='col-md-4'>
+            <p class="question one-line">
+                What if the person I want to share a document with does not have Tanker?
+            </p>
+        </div>
+        <div class="col-md-4 mobile">
+            <p class="answer text-justify">
+                Tanker’s infrastructure enables you to share documents inside and outside your company with full end-to-end encryption.  <br />
+                If you share a collaborative folder, the recipient will have to setup Tanker on his computer in order to decrypt the documents. Installing Tanker only takes a few seconds so your collaborator will be up and running in no time.
+            </p>
+        </div>
+        <div class='col-md-4'>
+            <p class="question">
+                What if I forget my PIN code or lose my device?
+            </p>
+        </div>
+        <div class="col-md-4 mobile">
+            <p class="answer text-justify">
+                If you lose your PIN Code, your unique encryption key will be cancelled and you will have to click “Reset PIN Code” to get back access to your data. Your administrator (someone in your IT team) will make sure you can access it back.
+            </p>
+        </div>
+    </div>
+    <div class='row desktop'>
+        <div class='col-md-4'>
+            <p class="answer text-justify">
+                Yes, you always need to have Dropbox or OneDrive desktop client setup on your computer. Tanker’s know-how is to provide world-class encryption on your data. We let our cloud partners manage what they are the best at: stock, sync and share.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="answer text-justify">
+                Tanker’s infrastructure enables you to share documents inside and outside your company with full end-to-end encryption.  <br />
+                If you share a collaborative folder, the recipient will have to setup Tanker on his computer in order to decrypt the documents. Installing Tanker only takes a few seconds so your collaborator will be up and running in no time.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="answer text-justify">
+                If you lose your PIN Code, your unique encryption key will be cancelled and you will have to click “Reset PIN Code” to get back access to your data. Your administrator (someone in your IT team) will make sure you can access it back.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
         </div>
     </div>
 </div>
@@ -214,3 +254,4 @@
         });
     </script>
 {% endblock %}
+

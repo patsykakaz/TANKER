@@ -84,8 +84,27 @@
     {% endblock %}
 
     <div id="contact-popup" class="white-popup mfp-hide">
-        <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/027027dcb8a0cd805071e06cf6d0c2f9836671"><script src="https://pipedrivewebforms.com/webforms.min.js"></script></div>
+        <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/5c644f537bc4f45905f7c191e01c7585836671"><script src="https://pipedrivewebforms.com/webforms.min.js"></script></div>
     </div>
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.middlize').each(function(){
+        refH = $(this).siblings('.middlize_ref').height();
+        targetH = $(this).height();
+        if(refH>targetH){
+            console.log('middlize');
+            $(this).css('margin-top',(refH-targetH)/2);
+        }else{
+            $(this).siblings('.middlize_ref').css('margin-top',(targetH-refH)/2);
+        }
+    });
+    // $('.middlize').css('margin-top',($().subling('.middlize_ref').height()-$('.middlize').height())/2);
+
+    $('.col-lg-4.big img').css('margin-bottom', ($('#anssi').height()-$('.col-lg-4.big').height())/2);
+    $('.col-lg-4.last img').css('margin-bottom', ($('#anssi').height()-$('.col-lg-4.last').height())/2);
+});
+</script>
 </html>
+
 
